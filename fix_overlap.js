@@ -6,7 +6,7 @@ const getRoman = (num) => {
   return map[num];
 };
 
-const baseDir = 'C:\\Users\\yogesh\\Downloads\\stitch_ece_industry_readiness_roadmap\\stitch_ece_industry_readiness_roadmap';
+const baseDir = path.join(__dirname, 'stitch_ece_industry_readiness_roadmap');
 
 [1,2,3,4,5,6,7,8].forEach(semNum => {
   const roman = getRoman(semNum);

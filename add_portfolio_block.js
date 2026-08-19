@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const cheerio = require('cheerio');
 
-const baseDir = 'C:\\Users\\yogesh\\Downloads\\stitch_ece_industry_readiness_roadmap\\stitch_ece_industry_readiness_roadmap';
+const baseDir = path.join(__dirname, 'stitch_ece_industry_readiness_roadmap');
 const folder = 'semester_viii_ece_roadmap';
 
 const portfolioHTML = `

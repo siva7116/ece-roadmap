@@ -1,0 +1,325 @@
+<!DOCTYPE html><html class="light" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>ECE Contest → Career Roadmap | R2026 Industry Readiness Framework</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "on-tertiary-fixed-variant": "#005236",
+                        "on-primary-container": "#7c839b",
+                        "outline": "#76777d",
+                        "on-primary": "#ffffff",
+                        "surface-bright": "#f8f9ff",
+                        "tertiary-container": "#002113",
+                        "on-secondary": "#ffffff",
+                        "inverse-primary": "#bec6e0",
+                        "surface-container-high": "#dce9ff",
+                        "surface-container": "#e5eeff",
+                        "background": "#f8f9ff",
+                        "surface-tint": "#565e74",
+                        "on-tertiary-container": "#009668",
+                        "surface": "#f8f9ff",
+                        "primary-fixed": "#dae2fd",
+                        "on-primary-fixed": "#131b2e",
+                        "on-secondary-container": "#fefcff",
+                        "secondary-container": "#316bf3",
+                        "on-tertiary-fixed": "#002113",
+                        "on-surface": "#0b1c30",
+                        "on-background": "#0b1c30",
+                        "inverse-on-surface": "#eaf1ff",
+                        "tertiary-fixed": "#6ffbbe",
+                        "inverse-surface": "#213145",
+                        "error": "#ba1a1a",
+                        "on-error-container": "#93000a",
+                        "primary-container": "#131b2e",
+                        "tertiary": "#000000",
+                        "surface-variant": "#d3e4fe",
+                        "surface-container-highest": "#d3e4fe",
+                        "secondary": "#0051d5",
+                        "secondary-fixed-dim": "#b4c5ff",
+                        "on-primary-fixed-variant": "#3f465c",
+                        "secondary-fixed": "#dbe1ff",
+                        "on-secondary-fixed-variant": "#003ea8",
+                        "surface-dim": "#cbdbf5",
+                        "tertiary-fixed-dim": "#4edea3",
+                        "primary": "#000000",
+                        "outline-variant": "#c6c6cd",
+                        "primary-fixed-dim": "#bec6e0",
+                        "surface-container-lowest": "#ffffff",
+                        "on-error": "#ffffff",
+                        "on-tertiary": "#ffffff",
+                        "surface-container-low": "#eff4ff",
+                        "error-container": "#ffdad6",
+                        "on-surface-variant": "#45464d",
+                        "on-secondary-fixed": "#00174b"
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    spacing: {
+                        "md": "24px",
+                        "sm": "12px",
+                        "base": "8px",
+                        "margin": "32px",
+                        "xl": "80px",
+                        "lg": "48px",
+                        "xs": "4px",
+                        "gutter": "24px"
+                    },
+                    fontFamily: {
+                        "title-md": ["Inter"],
+                        "label-caps": ["Inter"],
+                        "display-lg": ["Inter"],
+                        "headline-lg-mobile": ["Inter"],
+                        "body-base": ["Inter"],
+                        "body-sm": ["Inter"],
+                        "headline-lg": ["Inter"]
+                    },
+                    fontSize: {
+                        "title-md": ["20px", { "lineHeight": "1.4", "fontWeight": "600" }],
+                        "label-caps": ["12px", { "lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "display-lg": ["48px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "headline-lg-mobile": ["24px", { "lineHeight": "1.2", "fontWeight": "600" }],
+                        "body-base": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "body-sm": ["14px", { "lineHeight": "1.5", "fontWeight": "400" }],
+                        "headline-lg": ["32px", { "lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "600" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid theme('colors.outline-variant');
+        }
+        .roadmap-line {
+            width: 2px;
+            background: theme('colors.secondary-fixed');
+            position: absolute;
+            left: 24px;
+            top: 48px;
+            bottom: -48px;
+            z-index: 0;
+        }
+        .roadmap-node:last-child .roadmap-line {
+            display: none;
+        }
+    </style>
+
+      
+      
+      
+      <style class="view-transitions">
+        @view-transition { navigation: auto; }
+        ::view-transition-old(root), ::view-transition-new(root) {
+          animation-duration: 0.3s;
+          animation-fill-mode: both;
+          animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        ::view-transition-old(root) {
+          animation-name: fade-out, slide-out;
+        }
+        ::view-transition-new(root) {
+          animation-name: fade-in, slide-in;
+        }
+        @keyframes fade-out { to { opacity: 0; } }
+        @keyframes fade-in { from { opacity: 0; } }
+        @keyframes slide-out { to { transform: translateY(-10px); } }
+        @keyframes slide-in { from { transform: translateY(10px); } }
+      </style>
+    
+    
+    
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,500;1,700&amp;display=swap" rel="stylesheet"></head>
+<body class="bg-background text-on-background font-body-base antialiased min-h-screen flex flex-col">
+<!-- TopNavBar -->
+<nav class="sticky top-0 w-full z-50 flex justify-between items-center px-margin py-base bg-surface/95 backdrop-blur-sm border-b border-outline-variant flat no shadows">
+<div class="flex items-center gap-md">
+<img src="srm_logo.jpeg" alt="SRM Logo" class="srm-logo h-12 w-auto object-contain mr-1 rounded-md"><span class="font-headline-lg text-headline-lg font-bold text-primary">ECE Roadmap</span>
+</div>
+<div class="hidden md:flex flex-wrap gap-sm items-center ml-auto mr-md gap-1"><a class="bg-blue-100 text-blue-700 font-bold px-4 py-2 rounded-xl transition-all duration-300 text-title-sm tracking-wide" style="font-family: 'Inter', sans-serif;" href="index.html">Home</a>
+<a class="text-on-surface-variant hover:text-primary hover:bg-surface-container font-bold px-3 py-2 rounded-xl text-title-sm transition-all duration-300 tracking-wide" style="font-family: 'Inter', sans-serif;" href="semester-1.html">Sem I</a>
+<a class="text-on-surface-variant hover:text-primary hover:bg-surface-container font-bold px-3 py-2 rounded-xl text-title-sm transition-all duration-300 tracking-wide" style="font-family: 'Inter', sans-serif;" href="semester-2.html">Sem II</a>
+<a class="text-on-surface-variant hover:text-primary hover:bg-surface-container font-bold px-3 py-2 rounded-xl text-title-sm transition-all duration-300 tracking-wide" style="font-family: 'Inter', sans-serif;" href="semester-3.html">Sem III</a>
+<a class="text-on-surface-variant hover:text-primary hover:bg-surface-container font-bold px-3 py-2 rounded-xl text-title-sm transition-all duration-300 tracking-wide" style="font-family: 'Inter', sans-serif;" href="semester-4.html">Sem IV</a>
+<a class="text-on-surface-variant hover:text-primary hover:bg-surface-container font-bold px-3 py-2 rounded-xl text-title-sm transition-all duration-300 tracking-wide" style="font-family: 'Inter', sans-serif;" href="semester-5.html">Sem V</a>
+<a class="text-on-surface-variant hover:text-primary hover:bg-surface-container font-bold px-3 py-2 rounded-xl text-title-sm transition-all duration-300 tracking-wide" style="font-family: 'Inter', sans-serif;" href="semester-6.html">Sem VI</a>
+<a class="text-on-surface-variant hover:text-primary hover:bg-surface-container font-bold px-3 py-2 rounded-xl text-title-sm transition-all duration-300 tracking-wide" style="font-family: 'Inter', sans-serif;" href="semester-7.html">Sem VII</a>
+<a class="text-on-surface-variant hover:text-primary hover:bg-surface-container font-bold px-3 py-2 rounded-xl text-title-sm transition-all duration-300 tracking-wide" style="font-family: 'Inter', sans-serif;" href="semester-8.html">Sem VIII</a>
+</div>
+<div class="flex items-center gap-sm text-secondary">
+
+
+</div>
+</nav>
+<div class="flex flex-1">
+<!-- SideNavBar -->
+
+<!-- Main Canvas -->
+<main class="flex-1 w-full max-w-7xl mx-auto px-margin py-lg overflow-x-hidden">
+<!-- Hero Section -->
+<header class="mb-xl text-center md:text-left grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
+<div class="md:col-span-8 space-y-md">
+<p class="font-label-caps text-label-caps text-secondary uppercase tracking-widest">R2026 · Industry Readiness Framework</p>
+<h1 class="font-display-lg text-display-lg md:text-display-lg font-bold text-primary">ECE Contest → Career Roadmap</h1>
+<p class="font-body-base text-body-base text-on-surface-variant max-w-3xl">An industry-readiness framework that connects the R2026 ECE curriculum with practical skills, industry contests, structured activities and college-level challenges.</p>
+</div>
+<div class="hidden md:block md:col-span-4 rounded-xl overflow-hidden glass-panel h-64 relative">
+<img class="object-cover w-full h-full absolute inset-0" data-alt="A clean, minimalist 3D rendering of interconnected metallic nodes and glowing blue pathways, symbolizing an engineering roadmap. The scene is brightly lit with a soft, diffuse white light typical of a modern light-mode tech interface. The color palette focuses on crisp whites, light grays, and precise primary blue accents. The mood is analytical, structured, and forward-looking." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJCVmn3RwVaxgHbjhOYdnm4MnCSjO69VaO1kNME7j2A3PbC--XgMlf-roy0Sr-vh-_GbLGXLiCu9IaNGwAfQsULI4Y27rQ5ziqRciymXUPUfVIriTbattie3RGZh2O1oHIw02bWSCcp9l4Qn-EtxP4rJzeCTU1vN8tPyMlw2x0LjaxKno7w5QedidFHozCWCKsiQ6tLopt8AN2eAwbsh3WTuXMVm8zFu9hJ9yHe1lLzGff-ss8hfk9">
+</div>
+</header>
+<!-- 1. STUDENT SKILL JOURNEY -->
+<section class="mb-xl">
+<div class="mb-lg">
+<h2 class="font-headline-lg text-headline-lg font-bold text-primary mb-sm">Student Skill Journey</h2>
+<p class="font-body-base text-body-base text-on-surface-variant">SEM I → SEM VIII → PLACEMENT</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-md">
+<!-- Stage 1 -->
+<div class="bg-surface-container-lowest border border-outline-variant rounded-lg p-md hover:border-secondary hover:shadow-[0_4px_12px_rgba(15,23,42,0.05)] transition-all group">
+<div class="flex justify-between items-start mb-sm">
+<span class="font-label-caps text-label-caps text-on-surface-variant bg-surface-container-low px-2 py-1 rounded">Sem I</span>
+<span class="material-symbols-outlined text-secondary group-hover:text-secondary-container">foundation</span>
+</div>
+<h3 class="font-title-md text-title-md font-bold mb-xs">Programming &amp; Electronics</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Programming + Basic Electronics</p>
+</div>
+<!-- Stage 2 -->
+<div class="bg-surface-container-lowest border border-outline-variant rounded-lg p-md hover:border-secondary hover:shadow-[0_4px_12px_rgba(15,23,42,0.05)] transition-all group">
+<div class="flex justify-between items-start mb-sm">
+<span class="font-label-caps text-label-caps text-on-surface-variant bg-surface-container-low px-2 py-1 rounded">Sem II</span>
+<span class="material-symbols-outlined text-secondary group-hover:text-secondary-container">sensors</span>
+</div>
+<h3 class="font-title-md text-title-md font-bold mb-xs">MATLAB &amp; Sensors</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">MATLAB + Arduino/Sensors</p>
+</div>
+<!-- Stage 3 -->
+<div class="bg-surface-container-lowest border border-outline-variant rounded-lg p-md hover:border-secondary hover:shadow-[0_4px_12px_rgba(15,23,42,0.05)] transition-all group">
+<div class="flex justify-between items-start mb-sm">
+<span class="font-label-caps text-label-caps text-on-surface-variant bg-surface-container-low px-2 py-1 rounded">Sem III</span>
+<span class="material-symbols-outlined text-secondary group-hover:text-secondary-container">memory</span>
+</div>
+<h3 class="font-title-md text-title-md font-bold mb-xs">Digital Logic &amp; Coding</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Digital Logic + Coding</p>
+</div>
+<!-- Stage 4 -->
+<div class="bg-surface-container-lowest border border-outline-variant rounded-lg p-md hover:border-secondary hover:shadow-[0_4px_12px_rgba(15,23,42,0.05)] transition-all group">
+<div class="flex justify-between items-start mb-sm">
+<span class="font-label-caps text-label-caps text-on-surface-variant bg-surface-container-low px-2 py-1 rounded">Sem IV</span>
+<span class="material-symbols-outlined text-secondary group-hover:text-secondary-container">developer_board</span>
+</div>
+<h3 class="font-title-md text-title-md font-bold mb-xs">Control &amp; Microcontrollers</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">MATLAB/Control + Microcontrollers</p>
+</div>
+<!-- Stage 5 -->
+<div class="bg-surface-container-lowest border border-outline-variant rounded-lg p-md hover:border-secondary hover:shadow-[0_4px_12px_rgba(15,23,42,0.05)] transition-all group">
+<div class="flex justify-between items-start mb-sm">
+<span class="font-label-caps text-label-caps text-on-surface-variant bg-surface-container-low px-2 py-1 rounded">Sem V</span>
+<span class="material-symbols-outlined text-secondary group-hover:text-secondary-container">speed</span>
+</div>
+<h3 class="font-title-md text-title-md font-bold mb-xs">DSP &amp; VLSI</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">DSP + VLSI</p>
+</div>
+<!-- Stage 6 -->
+<div class="bg-surface-container-lowest border border-outline-variant rounded-lg p-md hover:border-secondary hover:shadow-[0_4px_12px_rgba(15,23,42,0.05)] transition-all group">
+<div class="flex justify-between items-start mb-sm">
+<span class="font-label-caps text-label-caps text-on-surface-variant bg-surface-container-low px-2 py-1 rounded">Sem VI</span>
+<span class="material-symbols-outlined text-secondary group-hover:text-secondary-container">smart_toy</span>
+</div>
+<h3 class="font-title-md text-title-md font-bold mb-xs">AIoT &amp; Robotics</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">AIoT + Robotics</p>
+</div>
+<!-- Stage 7 -->
+<div class="bg-surface-container-lowest border border-outline-variant rounded-lg p-md hover:border-secondary hover:shadow-[0_4px_12px_rgba(15,23,42,0.05)] transition-all group">
+<div class="flex justify-between items-start mb-sm">
+<span class="font-label-caps text-label-caps text-on-surface-variant bg-surface-container-low px-2 py-1 rounded">Sem VII</span>
+<span class="material-symbols-outlined text-secondary group-hover:text-secondary-container">work</span>
+</div>
+<h3 class="font-title-md text-title-md font-bold mb-xs">Placement Prep &amp; Portfolio</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Placement Preparation + Portfolio</p>
+</div>
+<!-- Stage 8 -->
+<div class="bg-surface-container-lowest border border-outline-variant rounded-lg p-md hover:border-secondary hover:shadow-[0_4px_12px_rgba(15,23,42,0.05)] transition-all group">
+<div class="flex justify-between items-start mb-sm">
+<span class="font-label-caps text-label-caps text-on-surface-variant bg-surface-container-low px-2 py-1 rounded">Sem VIII</span>
+<span class="material-symbols-outlined text-secondary group-hover:text-secondary-container">workspace_premium</span>
+</div>
+<h3 class="font-title-md text-title-md font-bold mb-xs">Final Placement &amp; Portfolio</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Final Placement + Professional Portfolio</p>
+</div>
+</div>
+</section>
+<!-- 2. METHODOLOGY -->
+<section class="mb-xl bg-surface-bright rounded-xl border border-outline-variant p-lg">
+<div class="mb-lg max-w-2xl">
+<p class="font-label-caps text-label-caps text-secondary uppercase tracking-widest mb-xs">01 · CONTEST → ACTIVITY → PRE-CONTEST</p>
+<h2 class="font-headline-lg text-headline-lg font-bold text-primary mb-sm">Methodology Framework</h2>
+</div>
+<div class="relative pl-sm md:pl-0">
+<div class="grid grid-cols-1 md:grid-cols-6 gap-md relative z-10">
+<!-- Step 1 -->
+<div class="glass-panel p-sm rounded-lg text-center border border-outline-variant">
+<div class="w-8 h-8 mx-auto bg-primary text-on-primary rounded-full flex items-center justify-center font-bold text-sm mb-sm z-20 relative">1</div>
+<h4 class="font-label-caps text-label-caps mb-xs">Contest</h4>
+<p class="text-xs text-on-surface-variant">Identify the contest and required skill.</p>
+
+</div>
+<!-- Step 2 -->
+<div class="glass-panel p-sm rounded-lg text-center border border-outline-variant">
+<div class="w-8 h-8 mx-auto bg-primary text-on-primary rounded-full flex items-center justify-center font-bold text-sm mb-sm z-20 relative">2</div>
+<h4 class="font-label-caps text-label-caps mb-xs">Curriculum</h4>
+<p class="text-xs text-on-surface-variant">Map the R2026 subject.</p>
+
+</div>
+<!-- Step 3 -->
+<div class="glass-panel p-sm rounded-lg text-center border border-outline-variant">
+<div class="w-8 h-8 mx-auto bg-primary text-on-primary rounded-full flex items-center justify-center font-bold text-sm mb-sm z-20 relative">3</div>
+<h4 class="font-label-caps text-label-caps mb-xs">Gap</h4>
+<p class="text-xs text-on-surface-variant">Identify the missing practice.</p>
+
+</div>
+<!-- Step 4 -->
+<div class="glass-panel p-sm rounded-lg text-center border border-outline-variant">
+<div class="w-8 h-8 mx-auto bg-primary text-on-primary rounded-full flex items-center justify-center font-bold text-sm mb-sm z-20 relative">4</div>
+<h4 class="font-label-caps text-label-caps mb-xs">Activity</h4>
+<p class="text-xs text-on-surface-variant">Give a clear student assignment.</p>
+
+</div>
+<!-- Step 5 -->
+<div class="glass-panel p-sm rounded-lg text-center border border-outline-variant">
+<div class="w-8 h-8 mx-auto bg-primary text-on-primary rounded-full flex items-center justify-center font-bold text-sm mb-sm z-20 relative">5</div>
+<h4 class="font-label-caps text-label-caps mb-xs">Pre-Contest</h4>
+<p class="text-xs text-on-surface-variant">Conduct a similar college challenge.</p>
+
+</div>
+<!-- Step 6 -->
+<div class="glass-panel p-sm rounded-lg text-center border border-outline-variant">
+<div class="w-8 h-8 mx-auto bg-primary text-on-primary rounded-full flex items-center justify-center font-bold text-sm mb-sm z-20 relative">6</div>
+<h4 class="font-label-caps text-label-caps mb-xs">Portfolio</h4>
+<p class="text-xs text-on-surface-variant">Record the evidence and result.</p>
+
+</div>
+</div>
+</div>
+</section>
+
+</main>
+</div>
+<!-- Footer -->
+<footer class="w-full py-lg px-margin flex flex-col md:flex-row justify-between items-center gap-md bg-surface-container-highest border-t border-outline-variant flat no shadows mt-auto">
+<div class="font-label-caps text-label-caps font-bold text-on-surface">© 2026 ECE Department - Contest to Career Initiative</div>
+
+</footer>
+</body></html>

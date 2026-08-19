@@ -60,11 +60,11 @@ const data = [
   {
     semester: 4,
     track: 'Software',
-    contest: 'MathWorks Minidrone Competition',
+    contest: 'Kaggle Competitions',
     subject: 'Signals and Systems / Control-related topics',
     gap: 'MATLAB/Simulink modelling and control',
     activity: 'Simulate a feedback-control system using MATLAB/Simulink',
-    preContest: 'MATLAB-Control Challenge'
+    preContest: 'Kaggle ML Challenge'
   },
   {
     semester: 4,
@@ -105,11 +105,11 @@ const data = [
   {
     semester: 6,
     track: 'Hardware',
-    contest: 'NXP / Freescale Cup',
+    contest: 'Techgium (LTTS)',
     subject: 'Embedded Systems / Control Systems',
     gap: 'Autonomous control and sensor integration',
     activity: 'Develop a sensor-based line-following/autonomous robot',
-    preContest: 'Robotics Challenge'
+    preContest: 'Techgium Innovation Challenge'
   },
   {
     semester: 7,
@@ -225,7 +225,7 @@ const buildCardHtml = (item) => {
 `;
 };
 
-const baseDir = 'C:\\Users\\yogesh\\Downloads\\stitch_ece_industry_readiness_roadmap\\stitch_ece_industry_readiness_roadmap';
+const baseDir = path.join(__dirname, 'stitch_ece_industry_readiness_roadmap');
 
 [1,2,3,4,5,6,7,8].forEach(semNum => {
   const roman = getRoman(semNum);

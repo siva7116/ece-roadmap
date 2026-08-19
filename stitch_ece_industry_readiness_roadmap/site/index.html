@@ -1,325 +1,535 @@
-<!DOCTYPE html><html class="light" lang="en"><head>
-<meta charset="utf-8">
-<meta content="width=device-width, initial-scale=1.0" name="viewport">
-<title>ECE Contest → Career Roadmap | R2026 Industry Readiness Framework</title>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
-<script id="tailwind-config">
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    colors: {
-                        "on-tertiary-fixed-variant": "#005236",
-                        "on-primary-container": "#7c839b",
-                        "outline": "#76777d",
-                        "on-primary": "#ffffff",
-                        "surface-bright": "#f8f9ff",
-                        "tertiary-container": "#002113",
-                        "on-secondary": "#ffffff",
-                        "inverse-primary": "#bec6e0",
-                        "surface-container-high": "#dce9ff",
-                        "surface-container": "#e5eeff",
-                        "background": "#f8f9ff",
-                        "surface-tint": "#565e74",
-                        "on-tertiary-container": "#009668",
-                        "surface": "#f8f9ff",
-                        "primary-fixed": "#dae2fd",
-                        "on-primary-fixed": "#131b2e",
-                        "on-secondary-container": "#fefcff",
-                        "secondary-container": "#316bf3",
-                        "on-tertiary-fixed": "#002113",
-                        "on-surface": "#0b1c30",
-                        "on-background": "#0b1c30",
-                        "inverse-on-surface": "#eaf1ff",
-                        "tertiary-fixed": "#6ffbbe",
-                        "inverse-surface": "#213145",
-                        "error": "#ba1a1a",
-                        "on-error-container": "#93000a",
-                        "primary-container": "#131b2e",
-                        "tertiary": "#000000",
-                        "surface-variant": "#d3e4fe",
-                        "surface-container-highest": "#d3e4fe",
-                        "secondary": "#0051d5",
-                        "secondary-fixed-dim": "#b4c5ff",
-                        "on-primary-fixed-variant": "#3f465c",
-                        "secondary-fixed": "#dbe1ff",
-                        "on-secondary-fixed-variant": "#003ea8",
-                        "surface-dim": "#cbdbf5",
-                        "tertiary-fixed-dim": "#4edea3",
-                        "primary": "#000000",
-                        "outline-variant": "#c6c6cd",
-                        "primary-fixed-dim": "#bec6e0",
-                        "surface-container-lowest": "#ffffff",
-                        "on-error": "#ffffff",
-                        "on-tertiary": "#ffffff",
-                        "surface-container-low": "#eff4ff",
-                        "error-container": "#ffdad6",
-                        "on-surface-variant": "#45464d",
-                        "on-secondary-fixed": "#00174b"
-                    },
-                    borderRadius: {
-                        "DEFAULT": "0.125rem",
-                        "lg": "0.25rem",
-                        "xl": "0.5rem",
-                        "full": "0.75rem"
-                    },
-                    spacing: {
-                        "md": "24px",
-                        "sm": "12px",
-                        "base": "8px",
-                        "margin": "32px",
-                        "xl": "80px",
-                        "lg": "48px",
-                        "xs": "4px",
-                        "gutter": "24px"
-                    },
-                    fontFamily: {
-                        "title-md": ["Inter"],
-                        "label-caps": ["Inter"],
-                        "display-lg": ["Inter"],
-                        "headline-lg-mobile": ["Inter"],
-                        "body-base": ["Inter"],
-                        "body-sm": ["Inter"],
-                        "headline-lg": ["Inter"]
-                    },
-                    fontSize: {
-                        "title-md": ["20px", { "lineHeight": "1.4", "fontWeight": "600" }],
-                        "label-caps": ["12px", { "lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "600" }],
-                        "display-lg": ["48px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700" }],
-                        "headline-lg-mobile": ["24px", { "lineHeight": "1.2", "fontWeight": "600" }],
-                        "body-base": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
-                        "body-sm": ["14px", { "lineHeight": "1.5", "fontWeight": "400" }],
-                        "headline-lg": ["32px", { "lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "600" }]
-                    }
-                }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ECE Contest → Career Roadmap | SRM TRP Engineering College</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Inter:wght@400;500;600;700&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#eff6ff',
+              100: '#dbeafe',
+              200: '#bfdbfe',
+              500: '#3b82f6',
+              600: '#2563eb',
+              700: '#1d4ed8',
+              800: '#1e40af',
+              900: '#1e3a8a',
+            },
+            emerald: {
+              50: '#ecfdf5',
+              100: '#d1fae5',
+              500: '#10b981',
+              600: '#059669',
+              700: '#047857',
+              800: '#065f46',
             }
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            heading: ['"Plus Jakarta Sans"', 'Inter', 'sans-serif'],
+          }
         }
-    </script>
-<style>
-        .glass-panel {
-            background: rgba(255, 255, 255, 0.7);
-            backdrop-filter: blur(12px);
-            border: 1px solid theme('colors.outline-variant');
-        }
-        .roadmap-line {
-            width: 2px;
-            background: theme('colors.secondary-fixed');
-            position: absolute;
-            left: 24px;
-            top: 48px;
-            bottom: -48px;
-            z-index: 0;
-        }
-        .roadmap-node:last-child .roadmap-line {
-            display: none;
-        }
-    </style>
+      }
+    }
+  </script>
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background: radial-gradient(circle at 10% 20%, rgba(239, 246, 255, 0.7) 0%, rgba(248, 250, 252, 1) 90%);
+      color: #0f172a;
+    }
+    .font-heading {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+    .glass-nav {
+      background: rgba(255, 255, 255, 0.92);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid rgba(226, 232, 240, 0.85);
+    }
+    .glass-card {
+      background: rgba(255, 255, 255, 0.92);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(226, 232, 240, 0.85);
+      transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .software-card {
+      background: linear-gradient(180deg, rgba(255,255,255,0.98) 0%, rgba(248, 250, 255, 0.95) 100%);
+      border: 1.5px solid rgba(219, 234, 254, 0.95);
+      transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .software-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 20px 35px -10px rgba(37, 99, 235, 0.16), 0 0 0 1.5px rgba(59, 130, 246, 0.35);
+    }
+    .hardware-card {
+      background: linear-gradient(180deg, rgba(255,255,255,0.98) 0%, rgba(246, 254, 250, 0.95) 100%);
+      border: 1.5px solid rgba(209, 250, 229, 0.95);
+      transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .hardware-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 20px 35px -10px rgba(16, 185, 129, 0.16), 0 0 0 1.5px rgba(16, 185, 129, 0.35);
+    }
+    .activity-item {
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .activity-item:hover {
+      transform: translateX(4px);
+      background: #ffffff;
+      box-shadow: 0 4px 12px rgba(15, 23, 42, 0.05);
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(14px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .animate-fade-up {
+      animation: fadeInUp 0.45s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    }
+  </style>
 
-      
-      
-      
-      <style class="view-transitions">
-        @view-transition { navigation: auto; }
-        ::view-transition-old(root), ::view-transition-new(root) {
-          animation-duration: 0.3s;
-          animation-fill-mode: both;
-          animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-        }
-        ::view-transition-old(root) {
-          animation-name: fade-out, slide-out;
-        }
-        ::view-transition-new(root) {
-          animation-name: fade-in, slide-in;
-        }
-        @keyframes fade-out { to { opacity: 0; } }
-        @keyframes fade-in { from { opacity: 0; } }
-        @keyframes slide-out { to { transform: translateY(-10px); } }
-        @keyframes slide-in { from { transform: translateY(10px); } }
-      </style>
+</head>
+<body class="min-h-screen flex flex-col antialiased">
+  
+  <nav class="sticky top-0 w-full z-50 glass-nav border-b">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3 group">
+        <img src="srm_logo.jpeg" alt="SRM Logo" class="h-10 w-auto object-contain rounded-md shadow-xs group-hover:scale-105 transition-transform">
+        <div>
+          <div class="flex items-center gap-2">
+            <span class="font-heading font-extrabold text-base sm:text-lg text-slate-900 tracking-tight">ECE Roadmap</span>
+            <span class="hidden sm:inline-block text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded-full bg-blue-100 text-blue-800 border border-blue-200">R2026</span>
+          </div>
+          <p class="text-[11px] text-slate-500 font-medium hidden md:block">Contest → Career Industry Readiness</p>
+        </div>
+      </a>
+
+      <!-- Nav links desktop -->
+      <div class="hidden lg:flex items-center gap-1 bg-slate-100/70 p-1 rounded-xl border border-slate-200/60">
+        <a href="index.html" class="bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-bold px-3 py-1.5 rounded-lg shadow-sm text-xs tracking-wide transition-all">Home</a>
+<a href="semester-1.html" class="text-slate-600 hover:text-blue-600 hover:bg-blue-50/80 font-medium px-3 py-1.5 rounded-lg text-xs tracking-wide transition-all">Sem I</a>
+<a href="semester-2.html" class="text-slate-600 hover:text-blue-600 hover:bg-blue-50/80 font-medium px-3 py-1.5 rounded-lg text-xs tracking-wide transition-all">Sem II</a>
+<a href="semester-3.html" class="text-slate-600 hover:text-blue-600 hover:bg-blue-50/80 font-medium px-3 py-1.5 rounded-lg text-xs tracking-wide transition-all">Sem III</a>
+<a href="semester-4.html" class="text-slate-600 hover:text-blue-600 hover:bg-blue-50/80 font-medium px-3 py-1.5 rounded-lg text-xs tracking-wide transition-all">Sem IV</a>
+<a href="semester-5.html" class="text-slate-600 hover:text-blue-600 hover:bg-blue-50/80 font-medium px-3 py-1.5 rounded-lg text-xs tracking-wide transition-all">Sem V</a>
+<a href="semester-6.html" class="text-slate-600 hover:text-blue-600 hover:bg-blue-50/80 font-medium px-3 py-1.5 rounded-lg text-xs tracking-wide transition-all">Sem VI</a>
+<a href="semester-7.html" class="text-slate-600 hover:text-blue-600 hover:bg-blue-50/80 font-medium px-3 py-1.5 rounded-lg text-xs tracking-wide transition-all">Sem VII</a>
+<a href="semester-8.html" class="text-slate-600 hover:text-blue-600 hover:bg-blue-50/80 font-medium px-3 py-1.5 rounded-lg text-xs tracking-wide transition-all">Sem VIII</a>
+      </div>
+    </div>
+
+    <!-- Mobile Nav Bar (scrollable) -->
+    <div class="lg:hidden flex overflow-x-auto py-2 px-4 gap-1.5 bg-white/95 border-t border-slate-100 scrollbar-none">
+      <a href="index.html" class="bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-bold px-3 py-1.5 rounded-lg shadow-sm text-xs tracking-wide transition-all">Home</a>
+<a href="semester-1.html" class="text-slate-600 hover:text-blue-600 hover:bg-blue-50/80 font-medium px-3 py-1.5 rounded-lg text-xs tracking-wide transition-all">Sem I</a>
+<a href="semester-2.html" class="text-slate-600 hover:text-blue-600 hover:bg-blue-50/80 font-medium px-3 py-1.5 rounded-lg text-xs tracking-wide transition-all">Sem II</a>
+<a href="semester-3.html" class="text-slate-600 hover:text-blue-600 hover:bg-blue-50/80 font-medium px-3 py-1.5 rounded-lg text-xs tracking-wide transition-all">Sem III</a>
+<a href="semester-4.html" class="text-slate-600 hover:text-blue-600 hover:bg-blue-50/80 font-medium px-3 py-1.5 rounded-lg text-xs tracking-wide transition-all">Sem IV</a>
+<a href="semester-5.html" class="text-slate-600 hover:text-blue-600 hover:bg-blue-50/80 font-medium px-3 py-1.5 rounded-lg text-xs tracking-wide transition-all">Sem V</a>
+<a href="semester-6.html" class="text-slate-600 hover:text-blue-600 hover:bg-blue-50/80 font-medium px-3 py-1.5 rounded-lg text-xs tracking-wide transition-all">Sem VI</a>
+<a href="semester-7.html" class="text-slate-600 hover:text-blue-600 hover:bg-blue-50/80 font-medium px-3 py-1.5 rounded-lg text-xs tracking-wide transition-all">Sem VII</a>
+<a href="semester-8.html" class="text-slate-600 hover:text-blue-600 hover:bg-blue-50/80 font-medium px-3 py-1.5 rounded-lg text-xs tracking-wide transition-all">Sem VIII</a>
+    </div>
+  </nav>
+  
+
+  <main class="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8 animate-fade-up">
     
+    <!-- Hero Section -->
+    <header class="mb-10 relative overflow-hidden rounded-3xl bg-gradient-to-br from-slate-900 via-blue-950 to-indigo-950 text-white p-8 sm:p-12 shadow-xl border border-slate-800">
+      <div class="absolute -right-16 -top-16 w-80 h-80 bg-blue-500/20 rounded-full blur-3xl pointer-events-none"></div>
+      <div class="absolute -left-16 -bottom-16 w-80 h-80 bg-emerald-500/15 rounded-full blur-3xl pointer-events-none"></div>
+      
+      <div class="relative z-10 max-w-3xl">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 backdrop-blur-md border border-white/15 text-xs font-semibold text-blue-200 mb-4">
+          <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+          SRM TRP Engineering College • Autonomous Regulations 2026
+        </div>
+        <h1 class="font-heading font-extrabold text-3xl sm:text-5xl tracking-tight leading-tight mb-4">
+          ECE Contest <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-emerald-400">→ Career</span> Roadmap
+        </h1>
+        <p class="text-slate-200 text-base sm:text-lg leading-relaxed mb-6 font-normal">
+          A comprehensive, outcome-driven industry readiness framework bridging the R2026 B.E. ECE academic curriculum with global student hackathons, core hardware competitions, structured hands-on activities, and high-impact placement preparation.
+        </p>
+
+        <!-- Metrics chips -->
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-2">
+          <div class="bg-white/5 border border-white/10 rounded-xl p-3 backdrop-blur-xs">
+            <span class="block font-heading font-extrabold text-xl sm:text-2xl text-blue-400">8</span>
+            <span class="text-[11px] text-slate-300 font-medium">Semesters Mapped</span>
+          </div>
+          <div class="bg-white/5 border border-white/10 rounded-xl p-3 backdrop-blur-xs">
+            <span class="block font-heading font-extrabold text-xl sm:text-2xl text-emerald-400">2</span>
+            <span class="text-[11px] text-slate-300 font-medium">Specialized Tracks</span>
+          </div>
+          <div class="bg-white/5 border border-white/10 rounded-xl p-3 backdrop-blur-xs">
+            <span class="block font-heading font-extrabold text-xl sm:text-2xl text-indigo-400">12+</span>
+            <span class="text-[11px] text-slate-300 font-medium">Global Contests</span>
+          </div>
+          <div class="bg-white/5 border border-white/10 rounded-xl p-3 backdrop-blur-xs">
+            <span class="block font-heading font-extrabold text-xl sm:text-2xl text-teal-400">100%</span>
+            <span class="text-[11px] text-slate-300 font-medium">Industry Aligned</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Semester Grid Section -->
+    <section class="mb-12">
+      <div class="flex items-center justify-between mb-6">
+        <div>
+          <span class="text-[11px] font-bold uppercase tracking-widest text-blue-600 block">Semester Milestones</span>
+          <h2 class="font-heading font-extrabold text-2xl text-slate-900">Choose a Semester to Explore</h2>
+        </div>
+        <span class="text-xs font-semibold text-slate-500 hidden sm:block">SEM I → SEM VIII</span>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+        
+      <a href="semester-1.html" class="glass-card rounded-2xl p-5 block group relative overflow-hidden border border-slate-200/90 hover:border-blue-300">
+        <div class="absolute top-0 right-0 w-24 h-24 bg-gradient-to-bl from-blue-100/40 to-transparent rounded-bl-full pointer-events-none group-hover:scale-125 transition-transform duration-500"></div>
+        
+        <div class="flex items-start justify-between gap-2 mb-3">
+          <span class="px-2.5 py-1 rounded-lg bg-blue-50 text-blue-700 border border-blue-200 font-heading font-extrabold text-xs">
+            Sem I
+          </span>
+          <span class="text-[11px] font-semibold text-slate-400">1st Year</span>
+        </div>
+
+        <h3 class="font-heading font-bold text-base text-slate-900 mb-2 group-hover:text-blue-600 transition-colors flex items-center justify-between">
+          <span>Semester I</span>
+          <span class="material-symbols-outlined text-slate-400 group-hover:text-blue-600 group-hover:translate-x-1 transition-all text-sm">arrow_forward</span>
+        </h3>
+
+        <!-- Mapped subject chips (Enlarged readable content) -->
+        <div class="space-y-1.5 text-sm">
+          <div class="flex items-center gap-2 text-slate-800 truncate">
+            <span class="w-2 h-2 rounded-full bg-blue-600 shrink-0"></span>
+            <span class="truncate font-medium">Problem Solving Using C</span>
+          </div>
+          <div class="flex items-center gap-2 text-slate-800 truncate">
+            <span class="w-2 h-2 rounded-full bg-emerald-600 shrink-0"></span>
+            <span class="truncate font-medium">Electric Circuits and Electronic Devices</span>
+          </div>
+        </div>
+
+        <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
+          <span class="text-slate-500 font-medium truncate max-w-[170px]">CodeChef Starters</span>
+          <span class="font-bold text-blue-600 group-hover:underline">Explore →</span>
+        </div>
+      </a>
     
+
+      <a href="semester-2.html" class="glass-card rounded-2xl p-5 block group relative overflow-hidden border border-slate-200/90 hover:border-blue-300">
+        <div class="absolute top-0 right-0 w-24 h-24 bg-gradient-to-bl from-blue-100/40 to-transparent rounded-bl-full pointer-events-none group-hover:scale-125 transition-transform duration-500"></div>
+        
+        <div class="flex items-start justify-between gap-2 mb-3">
+          <span class="px-2.5 py-1 rounded-lg bg-blue-50 text-blue-700 border border-blue-200 font-heading font-extrabold text-xs">
+            Sem II
+          </span>
+          <span class="text-[11px] font-semibold text-slate-400">1st Year</span>
+        </div>
+
+        <h3 class="font-heading font-bold text-base text-slate-900 mb-2 group-hover:text-blue-600 transition-colors flex items-center justify-between">
+          <span>Semester II</span>
+          <span class="material-symbols-outlined text-slate-400 group-hover:text-blue-600 group-hover:translate-x-1 transition-all text-sm">arrow_forward</span>
+        </h3>
+
+        <!-- Mapped subject chips (Enlarged readable content) -->
+        <div class="space-y-1.5 text-sm">
+          <div class="flex items-center gap-2 text-slate-800 truncate">
+            <span class="w-2 h-2 rounded-full bg-blue-600 shrink-0"></span>
+            <span class="truncate font-medium">Data Structures using C++</span>
+          </div>
+          <div class="flex items-center gap-2 text-slate-800 truncate">
+            <span class="w-2 h-2 rounded-full bg-emerald-600 shrink-0"></span>
+            <span class="truncate font-medium">Electronic Circuits</span>
+          </div>
+        </div>
+
+        <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
+          <span class="text-slate-500 font-medium truncate max-w-[170px]">MATLAB Student Competition / Challenge</span>
+          <span class="font-bold text-blue-600 group-hover:underline">Explore →</span>
+        </div>
+      </a>
     
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,500;1,700&amp;display=swap" rel="stylesheet"></head>
-<body class="bg-background text-on-background font-body-base antialiased min-h-screen flex flex-col">
-<!-- TopNavBar -->
-<nav class="sticky top-0 w-full z-50 flex justify-between items-center px-margin py-base bg-surface/95 backdrop-blur-sm border-b border-outline-variant flat no shadows">
-<div class="flex items-center gap-md">
-<img src="srm_logo.jpeg" alt="SRM Logo" class="srm-logo h-12 w-auto object-contain mr-1 rounded-md"><span class="font-headline-lg text-headline-lg font-bold text-primary">ECE Roadmap</span>
-</div>
-<div class="hidden md:flex flex-wrap gap-sm items-center ml-auto mr-md gap-1"><a class="bg-blue-100 text-blue-700 font-bold px-4 py-2 rounded-xl transition-all duration-300 text-title-sm tracking-wide" style="font-family: 'Inter', sans-serif;" href="index.html">Home</a>
-<a class="text-on-surface-variant hover:text-primary hover:bg-surface-container font-bold px-3 py-2 rounded-xl text-title-sm transition-all duration-300 tracking-wide" style="font-family: 'Inter', sans-serif;" href="semester-1.html">Sem I</a>
-<a class="text-on-surface-variant hover:text-primary hover:bg-surface-container font-bold px-3 py-2 rounded-xl text-title-sm transition-all duration-300 tracking-wide" style="font-family: 'Inter', sans-serif;" href="semester-2.html">Sem II</a>
-<a class="text-on-surface-variant hover:text-primary hover:bg-surface-container font-bold px-3 py-2 rounded-xl text-title-sm transition-all duration-300 tracking-wide" style="font-family: 'Inter', sans-serif;" href="semester-3.html">Sem III</a>
-<a class="text-on-surface-variant hover:text-primary hover:bg-surface-container font-bold px-3 py-2 rounded-xl text-title-sm transition-all duration-300 tracking-wide" style="font-family: 'Inter', sans-serif;" href="semester-4.html">Sem IV</a>
-<a class="text-on-surface-variant hover:text-primary hover:bg-surface-container font-bold px-3 py-2 rounded-xl text-title-sm transition-all duration-300 tracking-wide" style="font-family: 'Inter', sans-serif;" href="semester-5.html">Sem V</a>
-<a class="text-on-surface-variant hover:text-primary hover:bg-surface-container font-bold px-3 py-2 rounded-xl text-title-sm transition-all duration-300 tracking-wide" style="font-family: 'Inter', sans-serif;" href="semester-6.html">Sem VI</a>
-<a class="text-on-surface-variant hover:text-primary hover:bg-surface-container font-bold px-3 py-2 rounded-xl text-title-sm transition-all duration-300 tracking-wide" style="font-family: 'Inter', sans-serif;" href="semester-7.html">Sem VII</a>
-<a class="text-on-surface-variant hover:text-primary hover:bg-surface-container font-bold px-3 py-2 rounded-xl text-title-sm transition-all duration-300 tracking-wide" style="font-family: 'Inter', sans-serif;" href="semester-8.html">Sem VIII</a>
-</div>
-<div class="flex items-center gap-sm text-secondary">
 
+      <a href="semester-3.html" class="glass-card rounded-2xl p-5 block group relative overflow-hidden border border-slate-200/90 hover:border-blue-300">
+        <div class="absolute top-0 right-0 w-24 h-24 bg-gradient-to-bl from-blue-100/40 to-transparent rounded-bl-full pointer-events-none group-hover:scale-125 transition-transform duration-500"></div>
+        
+        <div class="flex items-start justify-between gap-2 mb-3">
+          <span class="px-2.5 py-1 rounded-lg bg-blue-50 text-blue-700 border border-blue-200 font-heading font-extrabold text-xs">
+            Sem III
+          </span>
+          <span class="text-[11px] font-semibold text-slate-400">2nd Year</span>
+        </div>
 
-</div>
-</nav>
-<div class="flex flex-1">
-<!-- SideNavBar -->
+        <h3 class="font-heading font-bold text-base text-slate-900 mb-2 group-hover:text-blue-600 transition-colors flex items-center justify-between">
+          <span>Semester III</span>
+          <span class="material-symbols-outlined text-slate-400 group-hover:text-blue-600 group-hover:translate-x-1 transition-all text-sm">arrow_forward</span>
+        </h3>
 
-<!-- Main Canvas -->
-<main class="flex-1 w-full max-w-7xl mx-auto px-margin py-lg overflow-x-hidden">
-<!-- Hero Section -->
-<header class="mb-xl text-center md:text-left grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
-<div class="md:col-span-8 space-y-md">
-<p class="font-label-caps text-label-caps text-secondary uppercase tracking-widest">R2026 · Industry Readiness Framework</p>
-<h1 class="font-display-lg text-display-lg md:text-display-lg font-bold text-primary">ECE Contest → Career Roadmap</h1>
-<p class="font-body-base text-body-base text-on-surface-variant max-w-3xl">An industry-readiness framework that connects the R2026 ECE curriculum with practical skills, industry contests, structured activities and college-level challenges.</p>
-</div>
-<div class="hidden md:block md:col-span-4 rounded-xl overflow-hidden glass-panel h-64 relative">
-<img class="object-cover w-full h-full absolute inset-0" data-alt="A clean, minimalist 3D rendering of interconnected metallic nodes and glowing blue pathways, symbolizing an engineering roadmap. The scene is brightly lit with a soft, diffuse white light typical of a modern light-mode tech interface. The color palette focuses on crisp whites, light grays, and precise primary blue accents. The mood is analytical, structured, and forward-looking." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJCVmn3RwVaxgHbjhOYdnm4MnCSjO69VaO1kNME7j2A3PbC--XgMlf-roy0Sr-vh-_GbLGXLiCu9IaNGwAfQsULI4Y27rQ5ziqRciymXUPUfVIriTbattie3RGZh2O1oHIw02bWSCcp9l4Qn-EtxP4rJzeCTU1vN8tPyMlw2x0LjaxKno7w5QedidFHozCWCKsiQ6tLopt8AN2eAwbsh3WTuXMVm8zFu9hJ9yHe1lLzGff-ss8hfk9">
-</div>
-</header>
-<!-- 1. STUDENT SKILL JOURNEY -->
-<section class="mb-xl">
-<div class="mb-lg">
-<h2 class="font-headline-lg text-headline-lg font-bold text-primary mb-sm">Student Skill Journey</h2>
-<p class="font-body-base text-body-base text-on-surface-variant">SEM I → SEM VIII → PLACEMENT</p>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-md">
-<!-- Stage 1 -->
-<div class="bg-surface-container-lowest border border-outline-variant rounded-lg p-md hover:border-secondary hover:shadow-[0_4px_12px_rgba(15,23,42,0.05)] transition-all group">
-<div class="flex justify-between items-start mb-sm">
-<span class="font-label-caps text-label-caps text-on-surface-variant bg-surface-container-low px-2 py-1 rounded">Sem I</span>
-<span class="material-symbols-outlined text-secondary group-hover:text-secondary-container">foundation</span>
-</div>
-<h3 class="font-title-md text-title-md font-bold mb-xs">Programming &amp; Electronics</h3>
-<p class="font-body-sm text-body-sm text-on-surface-variant">Programming + Basic Electronics</p>
-</div>
-<!-- Stage 2 -->
-<div class="bg-surface-container-lowest border border-outline-variant rounded-lg p-md hover:border-secondary hover:shadow-[0_4px_12px_rgba(15,23,42,0.05)] transition-all group">
-<div class="flex justify-between items-start mb-sm">
-<span class="font-label-caps text-label-caps text-on-surface-variant bg-surface-container-low px-2 py-1 rounded">Sem II</span>
-<span class="material-symbols-outlined text-secondary group-hover:text-secondary-container">sensors</span>
-</div>
-<h3 class="font-title-md text-title-md font-bold mb-xs">MATLAB &amp; Sensors</h3>
-<p class="font-body-sm text-body-sm text-on-surface-variant">MATLAB + Arduino/Sensors</p>
-</div>
-<!-- Stage 3 -->
-<div class="bg-surface-container-lowest border border-outline-variant rounded-lg p-md hover:border-secondary hover:shadow-[0_4px_12px_rgba(15,23,42,0.05)] transition-all group">
-<div class="flex justify-between items-start mb-sm">
-<span class="font-label-caps text-label-caps text-on-surface-variant bg-surface-container-low px-2 py-1 rounded">Sem III</span>
-<span class="material-symbols-outlined text-secondary group-hover:text-secondary-container">memory</span>
-</div>
-<h3 class="font-title-md text-title-md font-bold mb-xs">Digital Logic &amp; Coding</h3>
-<p class="font-body-sm text-body-sm text-on-surface-variant">Digital Logic + Coding</p>
-</div>
-<!-- Stage 4 -->
-<div class="bg-surface-container-lowest border border-outline-variant rounded-lg p-md hover:border-secondary hover:shadow-[0_4px_12px_rgba(15,23,42,0.05)] transition-all group">
-<div class="flex justify-between items-start mb-sm">
-<span class="font-label-caps text-label-caps text-on-surface-variant bg-surface-container-low px-2 py-1 rounded">Sem IV</span>
-<span class="material-symbols-outlined text-secondary group-hover:text-secondary-container">developer_board</span>
-</div>
-<h3 class="font-title-md text-title-md font-bold mb-xs">Control &amp; Microcontrollers</h3>
-<p class="font-body-sm text-body-sm text-on-surface-variant">MATLAB/Control + Microcontrollers</p>
-</div>
-<!-- Stage 5 -->
-<div class="bg-surface-container-lowest border border-outline-variant rounded-lg p-md hover:border-secondary hover:shadow-[0_4px_12px_rgba(15,23,42,0.05)] transition-all group">
-<div class="flex justify-between items-start mb-sm">
-<span class="font-label-caps text-label-caps text-on-surface-variant bg-surface-container-low px-2 py-1 rounded">Sem V</span>
-<span class="material-symbols-outlined text-secondary group-hover:text-secondary-container">speed</span>
-</div>
-<h3 class="font-title-md text-title-md font-bold mb-xs">DSP &amp; VLSI</h3>
-<p class="font-body-sm text-body-sm text-on-surface-variant">DSP + VLSI</p>
-</div>
-<!-- Stage 6 -->
-<div class="bg-surface-container-lowest border border-outline-variant rounded-lg p-md hover:border-secondary hover:shadow-[0_4px_12px_rgba(15,23,42,0.05)] transition-all group">
-<div class="flex justify-between items-start mb-sm">
-<span class="font-label-caps text-label-caps text-on-surface-variant bg-surface-container-low px-2 py-1 rounded">Sem VI</span>
-<span class="material-symbols-outlined text-secondary group-hover:text-secondary-container">smart_toy</span>
-</div>
-<h3 class="font-title-md text-title-md font-bold mb-xs">AIoT &amp; Robotics</h3>
-<p class="font-body-sm text-body-sm text-on-surface-variant">AIoT + Robotics</p>
-</div>
-<!-- Stage 7 -->
-<div class="bg-surface-container-lowest border border-outline-variant rounded-lg p-md hover:border-secondary hover:shadow-[0_4px_12px_rgba(15,23,42,0.05)] transition-all group">
-<div class="flex justify-between items-start mb-sm">
-<span class="font-label-caps text-label-caps text-on-surface-variant bg-surface-container-low px-2 py-1 rounded">Sem VII</span>
-<span class="material-symbols-outlined text-secondary group-hover:text-secondary-container">work</span>
-</div>
-<h3 class="font-title-md text-title-md font-bold mb-xs">Placement Prep &amp; Portfolio</h3>
-<p class="font-body-sm text-body-sm text-on-surface-variant">Placement Preparation + Portfolio</p>
-</div>
-<!-- Stage 8 -->
-<div class="bg-surface-container-lowest border border-outline-variant rounded-lg p-md hover:border-secondary hover:shadow-[0_4px_12px_rgba(15,23,42,0.05)] transition-all group">
-<div class="flex justify-between items-start mb-sm">
-<span class="font-label-caps text-label-caps text-on-surface-variant bg-surface-container-low px-2 py-1 rounded">Sem VIII</span>
-<span class="material-symbols-outlined text-secondary group-hover:text-secondary-container">workspace_premium</span>
-</div>
-<h3 class="font-title-md text-title-md font-bold mb-xs">Final Placement &amp; Portfolio</h3>
-<p class="font-body-sm text-body-sm text-on-surface-variant">Final Placement + Professional Portfolio</p>
-</div>
-</div>
-</section>
-<!-- 2. METHODOLOGY -->
-<section class="mb-xl bg-surface-bright rounded-xl border border-outline-variant p-lg">
-<div class="mb-lg max-w-2xl">
-<p class="font-label-caps text-label-caps text-secondary uppercase tracking-widest mb-xs">01 · CONTEST → ACTIVITY → PRE-CONTEST</p>
-<h2 class="font-headline-lg text-headline-lg font-bold text-primary mb-sm">Methodology Framework</h2>
-</div>
-<div class="relative pl-sm md:pl-0">
-<div class="grid grid-cols-1 md:grid-cols-6 gap-md relative z-10">
-<!-- Step 1 -->
-<div class="glass-panel p-sm rounded-lg text-center border border-outline-variant">
-<div class="w-8 h-8 mx-auto bg-primary text-on-primary rounded-full flex items-center justify-center font-bold text-sm mb-sm z-20 relative">1</div>
-<h4 class="font-label-caps text-label-caps mb-xs">Contest</h4>
-<p class="text-xs text-on-surface-variant">Identify the contest and required skill.</p>
+        <!-- Mapped subject chips (Enlarged readable content) -->
+        <div class="space-y-1.5 text-sm">
+          <div class="flex items-center gap-2 text-slate-800 truncate">
+            <span class="w-2 h-2 rounded-full bg-blue-600 shrink-0"></span>
+            <span class="truncate font-medium">Digital Signal Processing</span>
+          </div>
+          <div class="flex items-center gap-2 text-slate-800 truncate">
+            <span class="w-2 h-2 rounded-full bg-emerald-600 shrink-0"></span>
+            <span class="truncate font-medium">Digital System Design</span>
+          </div>
+        </div>
 
-</div>
-<!-- Step 2 -->
-<div class="glass-panel p-sm rounded-lg text-center border border-outline-variant">
-<div class="w-8 h-8 mx-auto bg-primary text-on-primary rounded-full flex items-center justify-center font-bold text-sm mb-sm z-20 relative">2</div>
-<h4 class="font-label-caps text-label-caps mb-xs">Curriculum</h4>
-<p class="text-xs text-on-surface-variant">Map the R2026 subject.</p>
+        <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
+          <span class="text-slate-500 font-medium truncate max-w-[170px]">IEEEXtreme Programming Competition</span>
+          <span class="font-bold text-blue-600 group-hover:underline">Explore →</span>
+        </div>
+      </a>
+    
 
-</div>
-<!-- Step 3 -->
-<div class="glass-panel p-sm rounded-lg text-center border border-outline-variant">
-<div class="w-8 h-8 mx-auto bg-primary text-on-primary rounded-full flex items-center justify-center font-bold text-sm mb-sm z-20 relative">3</div>
-<h4 class="font-label-caps text-label-caps mb-xs">Gap</h4>
-<p class="text-xs text-on-surface-variant">Identify the missing practice.</p>
+      <a href="semester-4.html" class="glass-card rounded-2xl p-5 block group relative overflow-hidden border border-slate-200/90 hover:border-blue-300">
+        <div class="absolute top-0 right-0 w-24 h-24 bg-gradient-to-bl from-blue-100/40 to-transparent rounded-bl-full pointer-events-none group-hover:scale-125 transition-transform duration-500"></div>
+        
+        <div class="flex items-start justify-between gap-2 mb-3">
+          <span class="px-2.5 py-1 rounded-lg bg-blue-50 text-blue-700 border border-blue-200 font-heading font-extrabold text-xs">
+            Sem IV
+          </span>
+          <span class="text-[11px] font-semibold text-slate-400">2nd Year</span>
+        </div>
 
-</div>
-<!-- Step 4 -->
-<div class="glass-panel p-sm rounded-lg text-center border border-outline-variant">
-<div class="w-8 h-8 mx-auto bg-primary text-on-primary rounded-full flex items-center justify-center font-bold text-sm mb-sm z-20 relative">4</div>
-<h4 class="font-label-caps text-label-caps mb-xs">Activity</h4>
-<p class="text-xs text-on-surface-variant">Give a clear student assignment.</p>
+        <h3 class="font-heading font-bold text-base text-slate-900 mb-2 group-hover:text-blue-600 transition-colors flex items-center justify-between">
+          <span>Semester IV</span>
+          <span class="material-symbols-outlined text-slate-400 group-hover:text-blue-600 group-hover:translate-x-1 transition-all text-sm">arrow_forward</span>
+        </h3>
 
-</div>
-<!-- Step 5 -->
-<div class="glass-panel p-sm rounded-lg text-center border border-outline-variant">
-<div class="w-8 h-8 mx-auto bg-primary text-on-primary rounded-full flex items-center justify-center font-bold text-sm mb-sm z-20 relative">5</div>
-<h4 class="font-label-caps text-label-caps mb-xs">Pre-Contest</h4>
-<p class="text-xs text-on-surface-variant">Conduct a similar college challenge.</p>
+        <!-- Mapped subject chips (Enlarged readable content) -->
+        <div class="space-y-1.5 text-sm">
+          <div class="flex items-center gap-2 text-slate-800 truncate">
+            <span class="w-2 h-2 rounded-full bg-blue-600 shrink-0"></span>
+            <span class="truncate font-medium">Artificial Intelligence and Machine Learning</span>
+          </div>
+          <div class="flex items-center gap-2 text-slate-800 truncate">
+            <span class="w-2 h-2 rounded-full bg-emerald-600 shrink-0"></span>
+            <span class="truncate font-medium">Embedded C Programming</span>
+          </div>
+        </div>
 
-</div>
-<!-- Step 6 -->
-<div class="glass-panel p-sm rounded-lg text-center border border-outline-variant">
-<div class="w-8 h-8 mx-auto bg-primary text-on-primary rounded-full flex items-center justify-center font-bold text-sm mb-sm z-20 relative">6</div>
-<h4 class="font-label-caps text-label-caps mb-xs">Portfolio</h4>
-<p class="text-xs text-on-surface-variant">Record the evidence and result.</p>
+        <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
+          <span class="text-slate-500 font-medium truncate max-w-[170px]">Kaggle Competitions</span>
+          <span class="font-bold text-blue-600 group-hover:underline">Explore →</span>
+        </div>
+      </a>
+    
 
-</div>
-</div>
-</div>
-</section>
+      <a href="semester-5.html" class="glass-card rounded-2xl p-5 block group relative overflow-hidden border border-slate-200/90 hover:border-blue-300">
+        <div class="absolute top-0 right-0 w-24 h-24 bg-gradient-to-bl from-blue-100/40 to-transparent rounded-bl-full pointer-events-none group-hover:scale-125 transition-transform duration-500"></div>
+        
+        <div class="flex items-start justify-between gap-2 mb-3">
+          <span class="px-2.5 py-1 rounded-lg bg-blue-50 text-blue-700 border border-blue-200 font-heading font-extrabold text-xs">
+            Sem V
+          </span>
+          <span class="text-[11px] font-semibold text-slate-400">3rd Year</span>
+        </div>
 
-</main>
-</div>
-<!-- Footer -->
-<footer class="w-full py-lg px-margin flex flex-col md:flex-row justify-between items-center gap-md bg-surface-container-highest border-t border-outline-variant flat no shadows mt-auto">
-<div class="font-label-caps text-label-caps font-bold text-on-surface">© 2026 ECE Department - Contest to Career Initiative</div>
+        <h3 class="font-heading font-bold text-base text-slate-900 mb-2 group-hover:text-blue-600 transition-colors flex items-center justify-between">
+          <span>Semester V</span>
+          <span class="material-symbols-outlined text-slate-400 group-hover:text-blue-600 group-hover:translate-x-1 transition-all text-sm">arrow_forward</span>
+        </h3>
 
-</footer>
-</body></html>
+        <!-- Mapped subject chips (Enlarged readable content) -->
+        <div class="space-y-1.5 text-sm">
+          <div class="flex items-center gap-2 text-slate-800 truncate">
+            <span class="w-2 h-2 rounded-full bg-blue-600 shrink-0"></span>
+            <span class="truncate font-medium">Digital Image Processing</span>
+          </div>
+          <div class="flex items-center gap-2 text-slate-800 truncate">
+            <span class="w-2 h-2 rounded-full bg-emerald-600 shrink-0"></span>
+            <span class="truncate font-medium">ASIC Design</span>
+          </div>
+        </div>
+
+        <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
+          <span class="text-slate-500 font-medium truncate max-w-[170px]">MATLAB/Simulink Design Challenge</span>
+          <span class="font-bold text-blue-600 group-hover:underline">Explore →</span>
+        </div>
+      </a>
+    
+
+      <a href="semester-6.html" class="glass-card rounded-2xl p-5 block group relative overflow-hidden border border-slate-200/90 hover:border-blue-300">
+        <div class="absolute top-0 right-0 w-24 h-24 bg-gradient-to-bl from-blue-100/40 to-transparent rounded-bl-full pointer-events-none group-hover:scale-125 transition-transform duration-500"></div>
+        
+        <div class="flex items-start justify-between gap-2 mb-3">
+          <span class="px-2.5 py-1 rounded-lg bg-blue-50 text-blue-700 border border-blue-200 font-heading font-extrabold text-xs">
+            Sem VI
+          </span>
+          <span class="text-[11px] font-semibold text-slate-400">3rd Year</span>
+        </div>
+
+        <h3 class="font-heading font-bold text-base text-slate-900 mb-2 group-hover:text-blue-600 transition-colors flex items-center justify-between">
+          <span>Semester VI</span>
+          <span class="material-symbols-outlined text-slate-400 group-hover:text-blue-600 group-hover:translate-x-1 transition-all text-sm">arrow_forward</span>
+        </h3>
+
+        <!-- Mapped subject chips (Enlarged readable content) -->
+        <div class="space-y-1.5 text-sm">
+          <div class="flex items-center gap-2 text-slate-800 truncate">
+            <span class="w-2 h-2 rounded-full bg-blue-600 shrink-0"></span>
+            <span class="truncate font-medium">Deep Learning</span>
+          </div>
+          <div class="flex items-center gap-2 text-slate-800 truncate">
+            <span class="w-2 h-2 rounded-full bg-emerald-600 shrink-0"></span>
+            <span class="truncate font-medium">Wireless and Optical Communication</span>
+          </div>
+        </div>
+
+        <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
+          <span class="text-slate-500 font-medium truncate max-w-[170px]">AIoT Design Challenge</span>
+          <span class="font-bold text-blue-600 group-hover:underline">Explore →</span>
+        </div>
+      </a>
+    
+
+      <a href="semester-7.html" class="glass-card rounded-2xl p-5 block group relative overflow-hidden border border-slate-200/90 hover:border-blue-300">
+        <div class="absolute top-0 right-0 w-24 h-24 bg-gradient-to-bl from-blue-100/40 to-transparent rounded-bl-full pointer-events-none group-hover:scale-125 transition-transform duration-500"></div>
+        
+        <div class="flex items-start justify-between gap-2 mb-3">
+          <span class="px-2.5 py-1 rounded-lg bg-blue-50 text-blue-700 border border-blue-200 font-heading font-extrabold text-xs">
+            Sem VII
+          </span>
+          <span class="text-[11px] font-semibold text-slate-400">4th Year</span>
+        </div>
+
+        <h3 class="font-heading font-bold text-base text-slate-900 mb-2 group-hover:text-blue-600 transition-colors flex items-center justify-between">
+          <span>Semester VII</span>
+          <span class="material-symbols-outlined text-slate-400 group-hover:text-blue-600 group-hover:translate-x-1 transition-all text-sm">arrow_forward</span>
+        </h3>
+
+        <!-- Mapped subject chips (Enlarged readable content) -->
+        <div class="space-y-1.5 text-sm">
+          <div class="flex items-center gap-2 text-slate-800 truncate">
+            <span class="w-2 h-2 rounded-full bg-blue-600 shrink-0"></span>
+            <span class="truncate font-medium">Software Defined Radio</span>
+          </div>
+          <div class="flex items-center gap-2 text-slate-800 truncate">
+            <span class="w-2 h-2 rounded-full bg-emerald-600 shrink-0"></span>
+            <span class="truncate font-medium">IOT Security</span>
+          </div>
+        </div>
+
+        <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
+          <span class="text-slate-500 font-medium truncate max-w-[170px]">Company Coding / Placement Tests</span>
+          <span class="font-bold text-blue-600 group-hover:underline">Explore →</span>
+        </div>
+      </a>
+    
+
+      <a href="semester-8.html" class="glass-card rounded-2xl p-5 block group relative overflow-hidden border border-slate-200/90 hover:border-blue-300">
+        <div class="absolute top-0 right-0 w-24 h-24 bg-gradient-to-bl from-blue-100/40 to-transparent rounded-bl-full pointer-events-none group-hover:scale-125 transition-transform duration-500"></div>
+        
+        <div class="flex items-start justify-between gap-2 mb-3">
+          <span class="px-2.5 py-1 rounded-lg bg-blue-50 text-blue-700 border border-blue-200 font-heading font-extrabold text-xs">
+            Sem VIII
+          </span>
+          <span class="text-[11px] font-semibold text-slate-400">4th Year</span>
+        </div>
+
+        <h3 class="font-heading font-bold text-base text-slate-900 mb-2 group-hover:text-blue-600 transition-colors flex items-center justify-between">
+          <span>Semester VIII</span>
+          <span class="material-symbols-outlined text-slate-400 group-hover:text-blue-600 group-hover:translate-x-1 transition-all text-sm">arrow_forward</span>
+        </h3>
+
+        <!-- Mapped subject chips (Enlarged readable content) -->
+        <div class="space-y-1.5 text-sm">
+          <div class="flex items-center gap-2 text-slate-800 truncate">
+            <span class="w-2 h-2 rounded-full bg-blue-600 shrink-0"></span>
+            <span class="truncate font-medium">Project Work</span>
+          </div>
+          <div class="flex items-center gap-2 text-slate-800 truncate">
+            <span class="w-2 h-2 rounded-full bg-emerald-600 shrink-0"></span>
+            <span class="truncate font-medium">Project Work</span>
+          </div>
+        </div>
+
+        <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
+          <span class="text-slate-500 font-medium truncate max-w-[170px]">Final Industry Placement Drives</span>
+          <span class="font-bold text-blue-600 group-hover:underline">Explore →</span>
+        </div>
+      </a>
+    
+      </div>
+    </section>
+
+    <!-- 6-Stage Methodology Framework -->
+    <section class="bg-white rounded-3xl border border-slate-200/80 p-8 shadow-sm">
+      <div class="max-w-2xl mb-8">
+        <span class="text-[11px] font-bold uppercase tracking-widest text-blue-600 block mb-1">01 • Continuous Learning Cycle</span>
+        <h2 class="font-heading font-extrabold text-2xl text-slate-900">The 6-Stage Contest-to-Career Methodology</h2>
+        <p class="text-sm text-slate-600 mt-1 leading-relaxed">
+          Every semester follows a structured six-step progression to transform syllabus topics into demonstrable engineering competencies.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-4">
+        
+        <div class="bg-slate-50 rounded-2xl p-4 border border-slate-200 text-center hover:bg-blue-50/50 hover:border-blue-300 transition-all group">
+          <div class="w-10 h-10 mx-auto rounded-xl bg-blue-600 text-white font-heading font-bold text-sm flex items-center justify-center mb-3 shadow-xs group-hover:scale-110 transition-transform">1</div>
+          <h4 class="font-heading font-bold text-sm text-slate-900 mb-1">Target Contest</h4>
+          <p class="text-xs text-slate-600 leading-normal">Identify premier contest and key problem statements.</p>
+        </div>
+
+        <div class="bg-slate-50 rounded-2xl p-4 border border-slate-200 text-center hover:bg-blue-50/50 hover:border-blue-300 transition-all group">
+          <div class="w-10 h-10 mx-auto rounded-xl bg-blue-700 text-white font-heading font-bold text-sm flex items-center justify-center mb-3 shadow-xs group-hover:scale-110 transition-transform">2</div>
+          <h4 class="font-heading font-bold text-sm text-slate-900 mb-1">Curriculum Link</h4>
+          <p class="text-xs text-slate-600 leading-normal">Map specific R2026 theory and laboratory subjects.</p>
+        </div>
+
+        <div class="bg-slate-50 rounded-2xl p-4 border border-slate-200 text-center hover:bg-amber-50/50 hover:border-amber-300 transition-all group">
+          <div class="w-10 h-10 mx-auto rounded-xl bg-amber-600 text-white font-heading font-bold text-sm flex items-center justify-center mb-3 shadow-xs group-hover:scale-110 transition-transform">3</div>
+          <h4 class="font-heading font-bold text-sm text-slate-900 mb-1">Skill Gap</h4>
+          <p class="text-xs text-slate-600 leading-normal">Pinpoint practical and computational gaps.</p>
+        </div>
+
+        <div class="bg-slate-50 rounded-2xl p-4 border border-slate-200 text-center hover:bg-emerald-50/50 hover:border-emerald-300 transition-all group">
+          <div class="w-10 h-10 mx-auto rounded-xl bg-emerald-600 text-white font-heading font-bold text-sm flex items-center justify-center mb-3 shadow-xs group-hover:scale-110 transition-transform">4</div>
+          <h4 class="font-heading font-bold text-sm text-slate-900 mb-1">3 Core Activities</h4>
+          <p class="text-xs text-slate-600 leading-normal">Execute structured hands-on laboratory exercises.</p>
+        </div>
+
+        <div class="bg-slate-50 rounded-2xl p-4 border border-slate-200 text-center hover:bg-indigo-50/50 hover:border-indigo-300 transition-all group">
+          <div class="w-10 h-10 mx-auto rounded-xl bg-indigo-600 text-white font-heading font-bold text-sm flex items-center justify-center mb-3 shadow-xs group-hover:scale-110 transition-transform">5</div>
+          <h4 class="font-heading font-bold text-sm text-slate-900 mb-1">Pre-Contest</h4>
+          <p class="text-xs text-slate-600 leading-normal">Compete in internal department mock challenges.</p>
+        </div>
+
+        <div class="bg-slate-50 rounded-2xl p-4 border border-slate-200 text-center hover:bg-teal-50/50 hover:border-teal-300 transition-all group">
+          <div class="w-10 h-10 mx-auto rounded-xl bg-teal-600 text-white font-heading font-bold text-sm flex items-center justify-center mb-3 shadow-xs group-hover:scale-110 transition-transform">6</div>
+          <h4 class="font-heading font-bold text-sm text-slate-900 mb-1">Portfolio &amp; Career</h4>
+          <p class="text-xs text-slate-600 leading-normal">Record proof on GitHub &amp; excel in core placements.</p>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="w-full py-6 px-4 bg-white border-t border-slate-200 text-center text-xs text-slate-500 mt-auto">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2">
+      <p class="font-medium">© 2026 SRM TRP Engineering College • Department of Electronics &amp; Communication Engineering</p>
+      <p class="text-slate-400">R2026 Autonomous Curriculum &amp; Syllabi Framework</p>
+    </div>
+  </footer>
+</body>
+</html>

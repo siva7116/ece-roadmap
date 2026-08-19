@@ -9,12 +9,14 @@ const links = {
     'IEEEXtreme Programming Competition': 'https://ieeextreme.org/',
     'IEEE CASS Student Design Competition': 'https://ieee-cas.org/',
     'MathWorks Minidrone Competition': 'https://www.mathworks.com/academia/student-competitions/minidrones.html',
+    'Kaggle Competitions': 'https://www.kaggle.com/competitions',
     'Texas Instruments Innovation Challenge (TIIC)': 'https://www.ti.com/',
     'MATLAB/Simulink Design Challenge': 'https://www.mathworks.com/academia/student-competitions.html',
     'Cadence Design Contest': 'https://www.cadence.com/',
     'AIoT Design Challenge': 'https://www.hackerearth.com/',
     'e-Yantra Robotics Competition (eYRC)': 'https://www.e-yantra.org/',
-    'NXP / Freescale Cup': 'http://nxpcup.nxp.com/',
+    'Techgium (LTTS)': 'https://techgium.ltts.com/',
+    'Techgium': 'https://techgium.ltts.com/',
     'TCS CodeVita / TCS NQT / Cognizant GenC': 'https://www.tcs.com/careers/tcs-codevita',
     'L&T / Core Industry Assessment': 'https://www.lntecc.com/',
     'GitHub / Portfolio': 'https://github.com/',
@@ -28,7 +30,7 @@ const getRoman = (num) => {
   return map[num];
 };
 
-const baseDir = 'C:\\Users\\yogesh\\Downloads\\stitch_ece_industry_readiness_roadmap\\stitch_ece_industry_readiness_roadmap';
+const baseDir = path.join(__dirname, 'stitch_ece_industry_readiness_roadmap');
 
 [1,2,3,4,5,6,7,8].forEach(semNum => {
   const roman = getRoman(semNum);
