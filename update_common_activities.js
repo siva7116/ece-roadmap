@@ -22,9 +22,9 @@ const commonActivities = {
       "Implement Non-Linear data structures (Binary Search Trees, Graphs) along with Searching & Sorting algorithms."
     ],
     "Hardware": [
-      "Design and bias Common Emitter BJT and Common Source FET amplifiers and analyze frequency response.",
-      "Construct negative feedback amplifiers and sinusoidal oscillators (RC Phase Shift, Wien Bridge, LC).",
-      "Design power amplifiers (Class A/B push-pull) and IC 555 waveform generators (Astable/Monostable)."
+      "BJT/FET Amplifier Design and Testing",
+      "Oscillator Construction and Debugging",
+      "Power Amplifier and 555 Waveform Generator Testing"
     ]
   },
   "3": {
