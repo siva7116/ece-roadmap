@@ -1,408 +1,419 @@
-<!DOCTYPE html><html lang="en"><head>
-<meta charset="utf-8">
-<meta content="width=device-width, initial-scale=1.0" name="viewport">
-<title>ECE Roadmap - Semester V</title>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet">
-<script id="tailwind-config">
-        tailwind.config = {
-          darkMode: "class",
-          theme: {
-            extend: {
-              "colors": {
-                      "on-tertiary-fixed-variant": "#005236",
-                      "on-primary-container": "#7c839b",
-                      "outline": "#76777d",
-                      "on-primary": "#ffffff",
-                      "surface-bright": "#f8f9ff",
-                      "tertiary-container": "#002113",
-                      "on-secondary": "#ffffff",
-                      "inverse-primary": "#bec6e0",
-                      "surface-container-high": "#dce9ff",
-                      "surface-container": "#e5eeff",
-                      "background": "#f8f9ff",
-                      "surface-tint": "#565e74",
-                      "on-tertiary-container": "#009668",
-                      "surface": "#f8f9ff",
-                      "primary-fixed": "#dae2fd",
-                      "on-primary-fixed": "#131b2e",
-                      "on-secondary-container": "#fefcff",
-                      "secondary-container": "#316bf3",
-                      "on-tertiary-fixed": "#002113",
-                      "on-surface": "#0b1c30",
-                      "on-background": "#0b1c30",
-                      "inverse-on-surface": "#eaf1ff",
-                      "tertiary-fixed": "#6ffbbe",
-                      "inverse-surface": "#213145",
-                      "error": "#ba1a1a",
-                      "on-error-container": "#93000a",
-                      "primary-container": "#131b2e",
-                      "tertiary": "#000000",
-                      "surface-variant": "#d3e4fe",
-                      "surface-container-highest": "#d3e4fe",
-                      "secondary": "#0051d5",
-                      "secondary-fixed-dim": "#b4c5ff",
-                      "on-primary-fixed-variant": "#3f465c",
-                      "secondary-fixed": "#dbe1ff",
-                      "on-secondary-fixed-variant": "#003ea8",
-                      "surface-dim": "#cbdbf5",
-                      "tertiary-fixed-dim": "#4edea3",
-                      "primary": "#000000",
-                      "outline-variant": "#c6c6cd",
-                      "primary-fixed-dim": "#bec6e0",
-                      "surface-container-lowest": "#ffffff",
-                      "on-error": "#ffffff",
-                      "on-tertiary": "#ffffff",
-                      "surface-container-low": "#eff4ff",
-                      "error-container": "#ffdad6",
-                      "on-surface-variant": "#45464d",
-                      "on-secondary-fixed": "#00174b"
-              },
-              "borderRadius": {
-                      "DEFAULT": "0.125rem",
-                      "lg": "0.25rem",
-                      "xl": "0.5rem",
-                      "full": "0.75rem"
-              },
-              "spacing": {
-                      "md": "24px",
-                      "sm": "12px",
-                      "base": "8px",
-                      "margin": "32px",
-                      "xl": "80px",
-                      "lg": "48px",
-                      "xs": "4px",
-                      "gutter": "24px"
-              },
-              "fontFamily": {
-                      "title-md": [
-                              "Inter"
-                      ],
-                      "label-caps": [
-                              "Inter"
-                      ],
-                      "display-lg": [
-                              "Inter"
-                      ],
-                      "headline-lg-mobile": [
-                              "Inter"
-                      ],
-                      "body-base": [
-                              "Inter"
-                      ],
-                      "body-sm": [
-                              "Inter"
-                      ],
-                      "headline-lg": [
-                              "Inter"
-                      ]
-              },
-              "fontSize": {
-                      "title-md": [
-                              "20px",
-                              {
-                                      "lineHeight": "1.4",
-                                      "fontWeight": "600"
-                              }
-                      ],
-                      "label-caps": [
-                              "12px",
-                              {
-                                      "lineHeight": "1",
-                                      "letterSpacing": "0.05em",
-                                      "fontWeight": "600"
-                              }
-                      ],
-                      "display-lg": [
-                              "48px",
-                              {
-                                      "lineHeight": "1.1",
-                                      "letterSpacing": "-0.02em",
-                                      "fontWeight": "700"
-                              }
-                      ],
-                      "headline-lg-mobile": [
-                              "24px",
-                              {
-                                      "lineHeight": "1.2",
-                                      "fontWeight": "600"
-                              }
-                      ],
-                      "body-base": [
-                              "16px",
-                              {
-                                      "lineHeight": "1.6",
-                                      "fontWeight": "400"
-                              }
-                      ],
-                      "body-sm": [
-                              "14px",
-                              {
-                                      "lineHeight": "1.5",
-                                      "fontWeight": "400"
-                              }
-                      ],
-                      "headline-lg": [
-                              "32px",
-                              {
-                                      "lineHeight": "1.2",
-                                      "letterSpacing": "-0.01em",
-                                      "fontWeight": "600"
-                              }
-                      ]
-              }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ECE Semester V Roadmap | Industry Readiness Framework</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Inter:wght@400;500;600;700&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#eff6ff',
+              100: '#dbeafe',
+              200: '#bfdbfe',
+              500: '#3b82f6',
+              600: '#2563eb',
+              700: '#1d4ed8',
+              800: '#1e40af',
+              900: '#1e3a8a',
             },
+            emerald: {
+              50: '#ecfdf5',
+              100: '#d1fae5',
+              500: '#10b981',
+              600: '#059669',
+              700: '#047857',
+              800: '#065f46',
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            heading: ['"Plus Jakarta Sans"', 'Inter', 'sans-serif'],
           }
         }
-      </script>
-<style>
-        .material-symbols-outlined {
-          font-variation-settings: 'FILL' 0;
-        }
-        .material-symbols-outlined.filled {
-          font-variation-settings: 'FILL' 1;
-        }
-      </style>
+      }
+    }
+  </script>
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background: radial-gradient(circle at 10% 20%, rgba(239, 246, 255, 0.7) 0%, rgba(248, 250, 252, 1) 90%);
+      color: #0f172a;
+    }
+    .font-heading {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+    .glass-nav {
+      background: rgba(255, 255, 255, 0.92);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid rgba(226, 232, 240, 0.85);
+    }
+    .glass-card {
+      background: rgba(255, 255, 255, 0.92);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(226, 232, 240, 0.85);
+      transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .software-card {
+      background: linear-gradient(180deg, rgba(255,255,255,0.98) 0%, rgba(248, 250, 255, 0.95) 100%);
+      border: 1.5px solid rgba(219, 234, 254, 0.95);
+      transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .software-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 20px 35px -10px rgba(37, 99, 235, 0.16), 0 0 0 1.5px rgba(59, 130, 246, 0.35);
+    }
+    .hardware-card {
+      background: linear-gradient(180deg, rgba(255,255,255,0.98) 0%, rgba(246, 254, 250, 0.95) 100%);
+      border: 1.5px solid rgba(209, 250, 229, 0.95);
+      transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .hardware-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 20px 35px -10px rgba(16, 185, 129, 0.16), 0 0 0 1.5px rgba(16, 185, 129, 0.35);
+    }
+    .activity-item {
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .activity-item:hover {
+      transform: translateX(4px);
+      background: #ffffff;
+      box-shadow: 0 4px 12px rgba(15, 23, 42, 0.05);
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(14px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .animate-fade-up {
+      animation: fadeInUp 0.45s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    }
+  </style>
 
-      
-      
-      
-      <style class="view-transitions">
-        @view-transition { navigation: auto; }
-        ::view-transition-old(root), ::view-transition-new(root) {
-          animation-duration: 0.3s;
-          animation-fill-mode: both;
-          animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-        }
-        ::view-transition-old(root) {
-          animation-name: fade-out, slide-out;
-        }
-        ::view-transition-new(root) {
-          animation-name: fade-in, slide-in;
-        }
-        @keyframes fade-out { to { opacity: 0; } }
-        @keyframes fade-in { from { opacity: 0; } }
-        @keyframes slide-out { to { transform: translateY(-10px); } }
-        @keyframes slide-in { from { transform: translateY(10px); } }
-      </style>
-    
-    
-    
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,500;1,700&amp;display=swap" rel="stylesheet"></head>
-<body class="bg-background text-on-background font-body-base min-h-screen flex flex-col">
-<!-- TopNavBar -->
-<nav class="sticky top-0 w-full z-50 flex justify-between items-center px-margin py-base bg-surface/95 backdrop-blur-sm border-b border-outline-variant dark:border-outline">
-<div class="flex items-center gap-md">
-<img src="srm_logo.jpeg" alt="SRM Logo" class="srm-logo h-12 w-auto object-contain mr-1 rounded-md"><span class="font-headline-lg text-headline-lg font-bold text-primary dark:text-primary-fixed">ECE Roadmap</span>
-</div>
-<div class="hidden md:flex items-center flex-wrap gap-sm ml-auto mr-md gap-1"><a class="text-on-surface-variant hover:text-primary hover:bg-surface-container font-bold px-3 py-2 rounded-xl text-title-sm transition-all duration-300 tracking-wide" style="font-family: 'Inter', sans-serif;" href="#">Home</a>
-<a class="text-on-surface-variant hover:text-primary hover:bg-surface-container font-bold px-3 py-2 rounded-xl text-title-sm transition-all duration-300 tracking-wide" style="font-family: 'Inter', sans-serif;" href="#">Sem I</a>
-<a class="text-on-surface-variant hover:text-primary hover:bg-surface-container font-bold px-3 py-2 rounded-xl text-title-sm transition-all duration-300 tracking-wide" style="font-family: 'Inter', sans-serif;" href="#">Sem II</a>
-<a class="text-on-surface-variant hover:text-primary hover:bg-surface-container font-bold px-3 py-2 rounded-xl text-title-sm transition-all duration-300 tracking-wide" style="font-family: 'Inter', sans-serif;" href="#">Sem III</a>
-<a class="text-on-surface-variant hover:text-primary hover:bg-surface-container font-bold px-3 py-2 rounded-xl text-title-sm transition-all duration-300 tracking-wide" style="font-family: 'Inter', sans-serif;" href="#">Sem IV</a>
-<a class="bg-blue-100 text-blue-700 font-bold px-4 py-2 rounded-xl transition-all duration-300 text-title-sm tracking-wide" style="font-family: 'Inter', sans-serif;" href="#">Sem V</a>
-<a class="text-on-surface-variant hover:text-primary hover:bg-surface-container font-bold px-3 py-2 rounded-xl text-title-sm transition-all duration-300 tracking-wide" style="font-family: 'Inter', sans-serif;" href="#">Sem VI</a>
-<a class="text-on-surface-variant hover:text-primary hover:bg-surface-container font-bold px-3 py-2 rounded-xl text-title-sm transition-all duration-300 tracking-wide" style="font-family: 'Inter', sans-serif;" href="#">Sem VII</a>
-<a class="text-on-surface-variant hover:text-primary hover:bg-surface-container font-bold px-3 py-2 rounded-xl text-title-sm transition-all duration-300 tracking-wide" style="font-family: 'Inter', sans-serif;" href="#">Sem VIII</a>
-</div>
-<div class="flex items-center gap-sm">
-<button class="p-2 text-primary hover:bg-surface-container-low rounded-full transition-colors">
-<span class="material-symbols-outlined">notifications</span>
-</button>
-<button class="p-2 text-primary hover:bg-surface-container-low rounded-full transition-colors">
-<span class="material-symbols-outlined">account_circle</span>
-</button>
-</div>
-</nav>
-<div class="flex flex-1 overflow-hidden">
-<!-- SideNavBar -->
-
-<!-- Main Content Canvas -->
-<main class="flex-1 overflow-y-auto p-margin md:p-lg lg:p-xl bg-surface">
-<header class="mb-lg">
-
-<h1 class="font-display-lg text-display-lg text-on-surface mb-sm">SEMESTER V <span class="text-outline">· DSP + VLSI</span></h1>
-<p class="font-title-md text-title-md text-on-surface-variant">Year 3</p>
-</header>
-<div class="grid grid-cols-1 xl:grid-cols-2 gap-lg">
-<!-- Path 1: Software -->
-<section class="flex flex-col">
-
-<div class="mb-md rounded-xl overflow-hidden border border-outline-variant shadow-sm flex flex-col">
-    <div class="h-48 w-full overflow-hidden">
-        <img src="path1_software.png" class="w-full h-full object-cover" alt="Software Path">
-    </div>
-    <div class="bg-[#1b629b] py-4 px-5">
-        <h2 class="font-title-lg text-title-lg text-white font-bold uppercase tracking-wider">PATH 1 (SOFTWARE)</h2>
-    </div>
-</div>
-
-
-<div class="bg-surface-container-lowest border border-outline-variant rounded-xl p-md flex-1 hover:border-secondary hover:shadow-[0_4px_12px_rgba(15,23,42,0.05)] transition-all group relative mt-md">
-    <div class="absolute top-md right-md font-label-caps text-label-caps px-2 py-1 rounded border text-secondary bg-surface-container-low border-secondary-container">
-        Software Focus
-    </div>
-    <div class="mb-md pr-32">
-        <h3 class="font-title-md text-title-md text-on-surface mb-xs">MATLAB/Simulink Design Challenge</h3>
-        <a href="https://www.mathworks.com/academia/student-competitions.html" target="_blank" class="font-label-caps text-label-caps text-secondary hover:underline flex items-center gap-1 mb-2 w-max">
-            <span class="material-symbols-outlined text-[14px]">link</span> Visit Website
-        </a>
-        <p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-xs">
-            <span class="material-symbols-outlined text-[16px]">emoji_events</span> Target Contest / Goal
-        </p>
-    </div>
-    <div class="space-y-sm mb-lg">
-        <div class="p-sm bg-surface-bright rounded-lg border border-surface-variant">
-            <h4 class="font-label-caps text-label-caps text-outline mb-xs flex items-center gap-xs">
-                <span class="material-symbols-outlined text-[14px]">map</span> Subject Mapped
-            </h4>
-            <p class="font-body-sm text-body-sm text-on-surface font-bold text-[15px]">Digital Image Processing</p>
-        </div>
-        <div class="pl-sm border-l-2 border-secondary-container">
-            <h4 class="font-label-caps text-label-caps text-secondary mb-xs">Skill Gap</h4>
-            <p class="font-body-sm text-body-sm text-on-surface-variant">Limited computational image-analysis experience.<br>Need practical implementation of image-processing algorithms.</p>
-        </div>
-    </div>
-    <div class="border-t border-outline-variant pt-md space-y-md">
+</head>
+<body class="min-h-screen flex flex-col antialiased">
+  
+  <nav class="sticky top-0 w-full z-50 glass-nav border-b">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3 group">
+        <img src="srm_logo.jpeg" alt="SRM Logo" class="h-10 w-auto object-contain rounded-md shadow-xs group-hover:scale-105 transition-transform">
         <div>
-            <h4 class="font-label-caps text-label-caps text-outline mb-xs">Activity</h4>
-            <p class="font-body-sm text-body-sm text-on-surface">Design and analyse digital filters using MATLAB</p><div class="mt-sm space-y-1">
-              <div class="flex flex-col bg-surface-container p-2 rounded border border-surface-variant">
-                <span class="font-label-caps text-[10px] text-outline">Unit 1 – Image Fundamentals &amp; CMOS</span>
-                <span class="font-body-sm text-on-surface">Image Acquisition, Pixel Representation and Histogram Analysis Using MATLAB/Python</span>
-              </div>
-            
-              <div class="flex flex-col bg-surface-container p-2 rounded border border-surface-variant">
-                <span class="font-label-caps text-[10px] text-outline">Unit 2 – Image Enhancement &amp; CMOS Logic</span>
-                <span class="font-body-sm text-on-surface">Image Contrast Enhancement Using Histogram Equalization</span>
-              </div>
-            
-              <div class="flex flex-col bg-surface-container p-2 rounded border border-surface-variant">
-                <span class="font-label-caps text-[10px] text-outline">Unit 3 – Image Filtering &amp; RTL</span>
-                <span class="font-body-sm text-on-surface">Spatial Filtering for Noise Removal in Digital Images</span>
-              </div>
-            
-              <div class="flex flex-col bg-surface-container p-2 rounded border border-surface-variant">
-                <span class="font-label-caps text-[10px] text-outline">Unit 4 – Edge Detection &amp; Verification</span>
-                <span class="font-body-sm text-on-surface">Edge Detection Using Sobel and Canny Operators</span>
-              </div>
-            
-              <div class="flex flex-col bg-surface-container p-2 rounded border border-surface-variant">
-                <span class="font-label-caps text-[10px] text-outline">Unit 5 – Image Classification &amp; ASIC Flow</span>
-                <span class="font-body-sm text-on-surface">Basic Image Classification Using Machine-Learning Techniques</span>
-              </div>
-            </div>
+          <div class="flex items-center gap-2">
+            <span class="font-heading font-extrabold text-base sm:text-lg text-slate-900 tracking-tight">ECE Roadmap</span>
+            <span class="hidden sm:inline-block text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded-full bg-blue-100 text-blue-800 border border-blue-200">R2026</span>
+          </div>
+          <p class="text-[11px] text-slate-500 font-medium hidden md:block">Contest → Career Industry Readiness</p>
         </div>
+      </a>
+
+      <!-- Nav links desktop -->
+      <div class="hidden lg:flex items-center gap-1 bg-slate-100/70 p-1 rounded-xl border border-slate-200/60">
+        <a href="index.html" class="text-slate-600 hover:text-blue-600 hover:bg-blue-50/80 font-medium px-3 py-1.5 rounded-lg text-xs tracking-wide transition-all">Home</a>
+<a href="semester-1.html" class="text-slate-600 hover:text-blue-600 hover:bg-blue-50/80 font-medium px-3 py-1.5 rounded-lg text-xs tracking-wide transition-all">Sem I</a>
+<a href="semester-2.html" class="text-slate-600 hover:text-blue-600 hover:bg-blue-50/80 font-medium px-3 py-1.5 rounded-lg text-xs tracking-wide transition-all">Sem II</a>
+<a href="semester-3.html" class="text-slate-600 hover:text-blue-600 hover:bg-blue-50/80 font-medium px-3 py-1.5 rounded-lg text-xs tracking-wide transition-all">Sem III</a>
+<a href="semester-4.html" class="text-slate-600 hover:text-blue-600 hover:bg-blue-50/80 font-medium px-3 py-1.5 rounded-lg text-xs tracking-wide transition-all">Sem IV</a>
+<a href="semester-5.html" class="bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-bold px-3 py-1.5 rounded-lg shadow-sm text-xs tracking-wide transition-all">Sem V</a>
+<a href="semester-6.html" class="text-slate-600 hover:text-blue-600 hover:bg-blue-50/80 font-medium px-3 py-1.5 rounded-lg text-xs tracking-wide transition-all">Sem VI</a>
+<a href="semester-7.html" class="text-slate-600 hover:text-blue-600 hover:bg-blue-50/80 font-medium px-3 py-1.5 rounded-lg text-xs tracking-wide transition-all">Sem VII</a>
+<a href="semester-8.html" class="text-slate-600 hover:text-blue-600 hover:bg-blue-50/80 font-medium px-3 py-1.5 rounded-lg text-xs tracking-wide transition-all">Sem VIII</a>
+      </div>
+    </div>
+
+    <!-- Mobile Nav Bar (scrollable) -->
+    <div class="lg:hidden flex overflow-x-auto py-2 px-4 gap-1.5 bg-white/95 border-t border-slate-100 scrollbar-none">
+      <a href="index.html" class="text-slate-600 hover:text-blue-600 hover:bg-blue-50/80 font-medium px-3 py-1.5 rounded-lg text-xs tracking-wide transition-all">Home</a>
+<a href="semester-1.html" class="text-slate-600 hover:text-blue-600 hover:bg-blue-50/80 font-medium px-3 py-1.5 rounded-lg text-xs tracking-wide transition-all">Sem I</a>
+<a href="semester-2.html" class="text-slate-600 hover:text-blue-600 hover:bg-blue-50/80 font-medium px-3 py-1.5 rounded-lg text-xs tracking-wide transition-all">Sem II</a>
+<a href="semester-3.html" class="text-slate-600 hover:text-blue-600 hover:bg-blue-50/80 font-medium px-3 py-1.5 rounded-lg text-xs tracking-wide transition-all">Sem III</a>
+<a href="semester-4.html" class="text-slate-600 hover:text-blue-600 hover:bg-blue-50/80 font-medium px-3 py-1.5 rounded-lg text-xs tracking-wide transition-all">Sem IV</a>
+<a href="semester-5.html" class="bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-bold px-3 py-1.5 rounded-lg shadow-sm text-xs tracking-wide transition-all">Sem V</a>
+<a href="semester-6.html" class="text-slate-600 hover:text-blue-600 hover:bg-blue-50/80 font-medium px-3 py-1.5 rounded-lg text-xs tracking-wide transition-all">Sem VI</a>
+<a href="semester-7.html" class="text-slate-600 hover:text-blue-600 hover:bg-blue-50/80 font-medium px-3 py-1.5 rounded-lg text-xs tracking-wide transition-all">Sem VII</a>
+<a href="semester-8.html" class="text-slate-600 hover:text-blue-600 hover:bg-blue-50/80 font-medium px-3 py-1.5 rounded-lg text-xs tracking-wide transition-all">Sem VIII</a>
+    </div>
+  </nav>
+  
+
+  <main class="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8 animate-fade-up">
+    
+    <!-- Semester Breadcrumb & Header Hero -->
+    <header class="mb-8 bg-white/90 backdrop-blur-md rounded-2xl border border-slate-200/80 p-6 shadow-sm">
+      <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+        <div>
+          <div class="flex items-center gap-2 mb-1.5">
+            <span class="inline-flex items-center gap-1 text-[11px] font-bold uppercase tracking-wider px-2.5 py-0.5 rounded-md bg-blue-50 text-blue-700 border border-blue-200">
+              <span class="w-1.5 h-1.5 rounded-full bg-blue-600 animate-pulse"></span>
+              Semester V • 3rd Year • Vision & Silicon
+            </span>
+            <span class="text-xs text-slate-400">•</span>
+            <span class="text-xs font-medium text-slate-500">Autonomous R2026</span>
+          </div>
+          <h1 class="font-heading font-extrabold text-2xl sm:text-3xl text-slate-900 tracking-tight">
+            Semester V Industry Readiness Roadmap
+          </h1>
+          <p class="text-sm sm:text-base text-slate-600 mt-1 max-w-3xl leading-relaxed">
+            Integrated dual-path framework: Software Engineering &amp; Core Hardware tracks aligned with university subjects and global challenges.
+          </p>
+        </div>
+
+        <!-- Quick Switcher Buttons -->
+        <div class="flex items-center gap-2 shrink-0">
+          <a href="semester-4.html" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-white border border-slate-200 text-xs font-semibold text-slate-700 hover:border-blue-300 hover:text-blue-600 hover:bg-blue-50 transition-all shadow-2xs">
+        <span class="material-symbols-outlined text-[16px]">arrow_back</span> Sem IV
+       </a>
+          <a href="semester-6.html" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-blue-600 border border-blue-600 text-xs font-semibold text-white hover:bg-blue-700 transition-all shadow-sm">
+        Sem VI <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+       </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Dual Path Comparison Grid -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
+      
+      <!-- PATH 1: SOFTWARE FOCUS -->
+      <section class="flex flex-col software-card rounded-2xl p-6 sm:p-7 shadow-xs">
         
-        <div>
-            <h4 class="font-label-caps text-label-caps text-outline mb-xs flex items-center gap-xs">
-                <span class="material-symbols-outlined text-[14px]">school</span> Value Added / NPTEL Course
-            </h4>
-            <p class="font-body-sm text-body-sm text-on-surface bg-surface-container-low p-sm rounded border border-outline-variant font-bold text-[15px]">
-                Digital Signal Processing
-            </p>
-        </div><div>
-            <h4 class="font-label-caps text-label-caps text-outline mb-xs">Pre-Contest / Pre-Placement</h4>
-            <p class="font-body-sm text-body-sm text-on-surface bg-surface-container-low p-sm rounded border border-outline-variant">
-                DSP Simulation Challenge
-            </p>
-        </div>
-    </div>
-</div>
-</section>
-<!-- Path 2: ECE Core / Hardware -->
-<section class="flex flex-col">
-
-<div class="mb-md rounded-xl overflow-hidden border border-outline-variant shadow-sm flex flex-col">
-    <div class="h-48 w-full overflow-hidden">
-        <img src="path2_hardware.png" class="w-full h-full object-cover" alt="ECE Core Path">
-    </div>
-    <div class="bg-[#187f62] py-4 px-5">
-        <h2 class="font-title-lg text-title-lg text-white font-bold uppercase tracking-wider">PATH 2 (ECE CORE)</h2>
-    </div>
-</div>
-
-
-<div class="bg-surface-container-lowest border border-outline-variant rounded-xl p-md flex-1 hover:border-secondary hover:shadow-[0_4px_12px_rgba(15,23,42,0.05)] transition-all group relative mt-md">
-    <div class="absolute top-md right-md font-label-caps text-label-caps px-2 py-1 rounded border text-surface-tint bg-surface-container border-outline-variant">
-        Hardware Focus
-    </div>
-    <div class="mb-md pr-32">
-        <h3 class="font-title-md text-title-md text-on-surface mb-xs">ChipForge – Silicon</h3>
-        <a href="https://chipforge.io" target="_blank" class="font-label-caps text-label-caps text-surface-tint hover:underline flex items-center gap-1 mb-2 w-max">
-            <span class="material-symbols-outlined text-[14px]">link</span> Visit Website
-        </a>
-        <p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-xs"><span class="material-symbols-outlined text-[16px]">emoji_events</span> Build the Chip</p>
-    </div>
-    <div class="space-y-sm mb-lg">
-        <div class="p-sm bg-surface-bright rounded-lg border border-surface-variant">
-            <h4 class="font-label-caps text-label-caps text-outline mb-xs flex items-center gap-xs">
-                <span class="material-symbols-outlined text-[14px]">map</span> Subject Mapped
-            </h4>
-            <p class="font-body-sm text-body-sm text-on-surface font-bold text-[15px]">ASIC Design</p>
-        </div>
-        <div class="pl-sm border-l-2 border-secondary-container">
-            <h4 class="font-label-caps text-label-caps text-secondary mb-xs">Skill Gap</h4>
-            <p class="font-body-sm text-body-sm text-on-surface-variant">Limited industry-oriented chip-design experience.<br>Need EDA-based design, simulation and verification practice.</p>
-        </div>
-    </div>
-    <div class="border-t border-outline-variant pt-md space-y-md">
-        <div>
-            <h4 class="font-label-caps text-label-caps text-outline mb-xs">Activity</h4>
-            <p class="font-body-sm text-body-sm text-on-surface">Design, simulate and verify a small digital circuit using EDA tools</p><div class="mt-sm space-y-1">
-              <div class="flex flex-col bg-surface-container p-2 rounded border border-surface-variant">
-                <span class="font-label-caps text-[10px] text-outline">Unit 1 – Synthesis</span>
-                <span class="font-body-sm text-on-surface">Implement the Synthesized Design on an FPGA for Functional Validation</span>
-              </div>
-            
-              <div class="flex flex-col bg-surface-container p-2 rounded border border-surface-variant">
-                <span class="font-label-caps text-[10px] text-outline">Unit 2 – Floorplanning</span>
-                <span class="font-body-sm text-on-surface">Analyse Placement Constraints for a Prototype Digital System</span>
-              </div>
-            
-              <div class="flex flex-col bg-surface-container p-2 rounded border border-surface-variant">
-                <span class="font-label-caps text-[10px] text-outline">Unit 3 – Timing Analysis</span>
-                <span class="font-body-sm text-on-surface">Hardware Timing Validation of High-Speed Digital Interfaces</span>
-              </div>
-            
-              <div class="flex flex-col bg-surface-container p-2 rounded border border-surface-variant">
-                <span class="font-label-caps text-[10px] text-outline">Unit 4 – RTL-to-GDSII</span>
-                <span class="font-body-sm text-on-surface">Physical Prototype Validation of the Designed Digital Module</span>
-              </div>
-            
-              <div class="flex flex-col bg-surface-container p-2 rounded border border-surface-variant">
-                <span class="font-label-caps text-[10px] text-outline">Unit 5 – Silicon Optimization</span>
-                <span class="font-body-sm text-on-surface">Final Design Demonstration with Performance and Resource Analysis</span>
-              </div>
+        <!-- Header Banner -->
+        <div class="rounded-xl overflow-hidden mb-6 border border-blue-200/70 shadow-xs">
+          <div class="h-40 w-full overflow-hidden relative bg-blue-900">
+            <img src="path1_software.png" class="w-full h-full object-cover opacity-90 hover:scale-105 transition-transform duration-500" alt="Software Path">
+            <div class="absolute inset-0 bg-gradient-to-t from-blue-950/80 via-transparent to-transparent"></div>
+            <div class="absolute top-3 right-3 px-2.5 py-1 rounded-full bg-white/90 backdrop-blur-md text-[11px] font-bold text-blue-700 shadow-xs flex items-center gap-1">
+              <span class="material-symbols-outlined text-[14px]">code</span> Track 1
             </div>
+          </div>
+          <div class="bg-gradient-to-r from-blue-700 via-blue-800 to-indigo-800 py-3.5 px-5 text-white flex items-center justify-between">
+            <div>
+              <span class="text-[10px] uppercase font-bold tracking-widest text-blue-200">Track 01</span>
+              <h2 class="font-heading font-extrabold text-lg text-white tracking-wide">PATH 1 (SOFTWARE)</h2>
+            </div>
+            <span class="material-symbols-outlined text-2xl text-blue-200">terminal</span>
+          </div>
         </div>
-        
-        <div>
-            <h4 class="font-label-caps text-label-caps text-outline mb-xs flex items-center gap-xs">
-                <span class="material-symbols-outlined text-[14px]">school</span> Value Added / NPTEL Course
+
+        <!-- Target Contest Card -->
+        <div class="bg-white rounded-xl border border-blue-100 p-4 mb-5 shadow-2xs">
+          <div class="flex items-start justify-between gap-2 mb-1.5">
+            <span class="text-[11px] font-bold uppercase tracking-wider text-blue-600 flex items-center gap-1">
+              <span class="material-symbols-outlined text-[15px]">emoji_events</span> Target Contest / Goal
+            </span>
+            <span class="px-2 py-0.5 rounded-full bg-blue-50 text-blue-700 text-[10px] font-semibold">Software Track</span>
+          </div>
+          <h3 class="font-heading font-bold text-lg text-slate-900 mb-2">MATLAB/Simulink Design Challenge</h3>
+          <a href="https://www.mathworks.com/academia/student-competitions.html" target="_blank" class="inline-flex items-center gap-1.5 text-xs font-semibold text-blue-600 hover:text-blue-800 hover:underline bg-blue-50/80 px-2.5 py-1 rounded-md border border-blue-100 transition-colors w-max group">
+            <span class="material-symbols-outlined text-[14px]">link</span> Visit Website 
+            <span class="material-symbols-outlined text-[14px] group-hover:translate-x-0.5 transition-transform">open_in_new</span>
+          </a>
+        </div>
+
+        <!-- Subject Mapped & Skill Gap -->
+        <div class="space-y-3.5 mb-5">
+          <div class="p-4 bg-slate-50/90 rounded-xl border border-slate-200/80">
+            <div class="flex items-center justify-between mb-1">
+              <h4 class="text-[11px] font-bold uppercase tracking-wider text-slate-500 flex items-center gap-1">
+                <span class="material-symbols-outlined text-[15px] text-blue-600">book</span> Subject Mapped
+              </h4>
+              <span class="text-[11px] font-semibold px-2 py-0.5 rounded bg-white text-slate-600 border border-slate-200">PC Core</span>
+            </div>
+            <!-- Increased Content Font Size -->
+            <p class="font-heading font-extrabold text-lg sm:text-xl text-slate-900">Digital Image Processing</p>
+          </div>
+
+          <div class="p-4 bg-amber-50/70 rounded-xl border-l-4 border-amber-500 border-t border-r border-b border-amber-200/70">
+            <h4 class="text-[11px] font-bold uppercase tracking-wider text-amber-900 mb-1 flex items-center gap-1">
+              <span class="material-symbols-outlined text-[15px] text-amber-600">psychology_alt</span> Skill Gap Identified
             </h4>
-            <p class="font-body-sm text-body-sm text-on-surface bg-surface-container-low p-sm rounded border border-outline-variant font-bold text-[15px]">
-                VLSI Design Flow: RTL to GDS
-            </p>
-        </div><div>
-            <h4 class="font-label-caps text-label-caps text-outline mb-xs">Pre-Contest / Pre-Placement</h4>
-            <p class="font-body-sm text-body-sm text-on-surface bg-surface-container-low p-sm rounded border border-outline-variant">
-                VLSI Design Challenge
-            </p>
+            <!-- Increased Content Font Size -->
+            <p class="text-base text-slate-800 leading-relaxed font-normal">Limited computational image-analysis experience. Need practical implementation of computer vision and image enhancement algorithms.</p>
+          </div>
         </div>
+
+        <!-- 3 Common Activities (Enlarged Content) -->
+        <div class="mb-5">
+          <h4 class="text-[11px] font-bold uppercase tracking-wider text-slate-500 mb-2.5 flex items-center gap-1">
+            <span class="material-symbols-outlined text-[15px] text-blue-600">task_alt</span> Core Hands-on Activities (3 Common)
+          </h4>
+          <div class="space-y-3">
+            <div class="activity-item flex items-start gap-3.5 bg-white p-3.5 rounded-xl border border-slate-200 shadow-2xs">
+              <span class="w-7 h-7 rounded-lg bg-gradient-to-br from-blue-600 to-indigo-600 text-white text-sm font-bold flex items-center justify-center shrink-0 mt-0.5 shadow-2xs">1</span>
+              <span class="text-base text-slate-900 font-medium leading-relaxed">Perform image loading, color space transformations (RGB/HSV/Grayscale), and histogram equalization using OpenCV.</span>
+            </div>
+            <div class="activity-item flex items-start gap-3.5 bg-white p-3.5 rounded-xl border border-slate-200 shadow-2xs">
+              <span class="w-7 h-7 rounded-lg bg-gradient-to-br from-blue-600 to-indigo-600 text-white text-sm font-bold flex items-center justify-center shrink-0 mt-0.5 shadow-2xs">2</span>
+              <span class="text-base text-slate-900 font-medium leading-relaxed">Implement spatial and frequency-domain filtering (Gaussian, Median, Homomorphic) for industrial image enhancement.</span>
+            </div>
+            <div class="activity-item flex items-start gap-3.5 bg-white p-3.5 rounded-xl border border-slate-200 shadow-2xs">
+              <span class="w-7 h-7 rounded-lg bg-gradient-to-br from-blue-600 to-indigo-600 text-white text-sm font-bold flex items-center justify-center shrink-0 mt-0.5 shadow-2xs">3</span>
+              <span class="text-base text-slate-900 font-medium leading-relaxed">Apply edge detection (Canny, Sobel), morphological segmentation, and feature extraction (SIFT/ORB) for inspection.</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Platform & Pre-Contest Challenge (Enlarged Content) -->
+        <div class="mt-auto pt-4 border-t border-slate-200/80 space-y-3">
+          <div class="p-3.5 bg-white rounded-xl border border-slate-200 flex items-start gap-3">
+            <span class="material-symbols-outlined text-xl text-blue-600 mt-0.5">laptop_mac</span>
+            <div>
+              <span class="text-[10px] uppercase font-bold tracking-wider text-slate-400 block">Recommended Platform</span>
+              <span class="text-base font-bold text-slate-900">OpenCV (Python / C++) & MATLAB</span>
+              <p class="text-sm text-slate-600 mt-0.5 leading-relaxed">Spatial filtering, morphological transforms, contour detection, and automated visual defect inspection.</p>
+            </div>
+          </div>
+
+          <div class="p-3.5 bg-gradient-to-r from-blue-50 to-indigo-50/50 rounded-xl border border-blue-200/80 flex items-center gap-3">
+            <span class="w-8 h-8 rounded-lg bg-blue-600 text-white flex items-center justify-center shrink-0 shadow-2xs">
+              <span class="material-symbols-outlined text-base">military_tech</span>
+            </span>
+            <div>
+              <span class="text-[10px] uppercase font-bold tracking-wider text-blue-700 block">Pre-Contest / Department Challenge</span>
+              <span class="text-base font-bold text-slate-900">DSP & Vision Simulation Challenge</span>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- PATH 2: HARDWARE / ECE CORE FOCUS -->
+      <section class="flex flex-col hardware-card rounded-2xl p-6 sm:p-7 shadow-xs">
+        
+        <!-- Header Banner -->
+        <div class="rounded-xl overflow-hidden mb-6 border border-emerald-200/70 shadow-xs">
+          <div class="h-40 w-full overflow-hidden relative bg-emerald-950">
+            <img src="path2_hardware.png" class="w-full h-full object-cover opacity-90 hover:scale-105 transition-transform duration-500" alt="Hardware Path">
+            <div class="absolute inset-0 bg-gradient-to-t from-emerald-950/80 via-transparent to-transparent"></div>
+            <div class="absolute top-3 right-3 px-2.5 py-1 rounded-full bg-white/90 backdrop-blur-md text-[11px] font-bold text-emerald-700 shadow-xs flex items-center gap-1">
+              <span class="material-symbols-outlined text-[14px]">memory</span> Track 2
+            </div>
+          </div>
+          <div class="bg-gradient-to-r from-emerald-700 via-emerald-800 to-teal-800 py-3.5 px-5 text-white flex items-center justify-between">
+            <div>
+              <span class="text-[10px] uppercase font-bold tracking-widest text-emerald-200">Track 02</span>
+              <h2 class="font-heading font-extrabold text-lg text-white tracking-wide">PATH 2 (ECE CORE)</h2>
+            </div>
+            <span class="material-symbols-outlined text-2xl text-emerald-200">developer_board</span>
+          </div>
+        </div>
+
+        <!-- Target Contest Card -->
+        <div class="bg-white rounded-xl border border-emerald-100 p-4 mb-5 shadow-2xs">
+          <div class="flex items-start justify-between gap-2 mb-1.5">
+            <span class="text-[11px] font-bold uppercase tracking-wider text-emerald-600 flex items-center gap-1">
+              <span class="material-symbols-outlined text-[15px]">emoji_events</span> Target Contest / Goal
+            </span>
+            <span class="px-2 py-0.5 rounded-full bg-emerald-50 text-emerald-700 text-[10px] font-semibold">Hardware Track</span>
+          </div>
+          <h3 class="font-heading font-bold text-lg text-slate-900 mb-2">ChipForge – Silicon</h3>
+          <a href="https://chipforge.io" target="_blank" class="inline-flex items-center gap-1.5 text-xs font-semibold text-emerald-600 hover:text-emerald-800 hover:underline bg-emerald-50/80 px-2.5 py-1 rounded-md border border-emerald-100 transition-colors w-max group">
+            <span class="material-symbols-outlined text-[14px]">link</span> Visit Website 
+            <span class="material-symbols-outlined text-[14px] group-hover:translate-x-0.5 transition-transform">open_in_new</span>
+          </a>
+        </div>
+
+        <!-- Subject Mapped & Skill Gap -->
+        <div class="space-y-3.5 mb-5">
+          <div class="p-4 bg-slate-50/90 rounded-xl border border-slate-200/80">
+            <div class="flex items-center justify-between mb-1">
+              <h4 class="text-[11px] font-bold uppercase tracking-wider text-slate-500 flex items-center gap-1">
+                <span class="material-symbols-outlined text-[15px] text-emerald-600">developer_board</span> Subject Mapped
+              </h4>
+              <span class="text-[11px] font-semibold px-2 py-0.5 rounded bg-white text-slate-600 border border-slate-200">2611ECPC501</span>
+            </div>
+            <!-- Increased Content Font Size -->
+            <p class="font-heading font-extrabold text-lg sm:text-xl text-slate-900">ASIC Design</p>
+          </div>
+
+          <div class="p-4 bg-emerald-50/60 rounded-xl border-l-4 border-emerald-500 border-t border-r border-b border-emerald-200/70">
+            <div class="flex items-center justify-between mb-1">
+              <h4 class="text-[11px] font-bold uppercase tracking-wider text-emerald-900 flex items-center gap-1">
+                <span class="material-symbols-outlined text-[15px] text-emerald-600">construction</span> Main Skill / Skill Gap
+              </h4>
+              <span class="px-2 py-0.5 rounded-full bg-emerald-100 text-emerald-800 text-[10px] font-bold">Build the Chip</span>
+            </div>
+            <!-- Increased Content Font Size -->
+            <p class="text-base text-slate-800 leading-relaxed font-normal"><strong>Main Skill: Build the Chip.</strong> Need industry-oriented ASIC synthesis, floorplanning, Static Timing Analysis (STA), clock tree synthesis, and RTL-to-GDSII physical design practice.</p>
+          </div>
+        </div>
+
+        <!-- 3 Common Activities (Enlarged Content) -->
+        <div class="mb-5">
+          <h4 class="text-[11px] font-bold uppercase tracking-wider text-slate-500 mb-2.5 flex items-center gap-1">
+            <span class="material-symbols-outlined text-[15px] text-emerald-600">task_alt</span> Core Hands-on Activities (3 Common)
+          </h4>
+          <div class="space-y-3">
+            <div class="activity-item flex items-start gap-3.5 bg-white p-3.5 rounded-xl border border-slate-200 shadow-2xs">
+              <span class="w-7 h-7 rounded-lg bg-gradient-to-br from-emerald-600 to-teal-600 text-white text-sm font-bold flex items-center justify-center shrink-0 mt-0.5 shadow-2xs">1</span>
+              <span class="text-base text-slate-900 font-medium leading-relaxed">Simulate CMOS Inverter DC voltage transfer characteristics, noise margins, and propagation delays using SPICE tools.</span>
+            </div>
+            <div class="activity-item flex items-start gap-3.5 bg-white p-3.5 rounded-xl border border-slate-200 shadow-2xs">
+              <span class="w-7 h-7 rounded-lg bg-gradient-to-br from-emerald-600 to-teal-600 text-white text-sm font-bold flex items-center justify-center shrink-0 mt-0.5 shadow-2xs">2</span>
+              <span class="text-base text-slate-900 font-medium leading-relaxed">Write synthesizable SystemVerilog RTL for digital logic blocks (32-bit ALU, FIFO) with self-checking testbenches.</span>
+            </div>
+            <div class="activity-item flex items-start gap-3.5 bg-white p-3.5 rounded-xl border border-slate-200 shadow-2xs">
+              <span class="w-7 h-7 rounded-lg bg-gradient-to-br from-emerald-600 to-teal-600 text-white text-sm font-bold flex items-center justify-center shrink-0 mt-0.5 shadow-2xs">3</span>
+              <span class="text-base text-slate-900 font-medium leading-relaxed">Execute ASIC synthesis, static timing analysis (STA) constraint validation, and standard-cell physical design.</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Platform & Pre-Contest Challenge (Enlarged Content) -->
+        <div class="mt-auto pt-4 border-t border-slate-200/80 space-y-3">
+          <div class="p-3.5 bg-white rounded-xl border border-slate-200 flex items-start gap-3">
+            <span class="material-symbols-outlined text-xl text-emerald-600 mt-0.5">precision_manufacturing</span>
+            <div>
+              <span class="text-[10px] uppercase font-bold tracking-wider text-slate-400 block">Recommended Tools &amp; Lab</span>
+              <span class="text-base font-bold text-slate-900">Cadence Genus / Innovus / EDA Cloud</span>
+              <p class="text-sm text-slate-600 mt-0.5 leading-relaxed">RTL-to-GDSII flow, cell placement, clock tree synthesis (CTS), and DRC/LVS physical verification.</p>
+            </div>
+          </div>
+
+          <div class="p-3.5 bg-gradient-to-r from-emerald-50 to-teal-50/50 rounded-xl border border-emerald-200/80 flex items-center gap-3">
+            <span class="w-8 h-8 rounded-lg bg-emerald-600 text-white flex items-center justify-center shrink-0 shadow-2xs">
+              <span class="material-symbols-outlined text-base">military_tech</span>
+            </span>
+            <div>
+              <span class="text-[10px] uppercase font-bold tracking-wider text-emerald-700 block">Pre-Contest / Hardware Challenge</span>
+              <span class="text-base font-bold text-slate-900">ChipForge Silicon Tapeout Challenge</span>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
     </div>
-</div>
-</section>
-</div>
 
-</main>
-</div>
-<!-- Footer -->
-<footer class="w-full py-lg px-margin flex flex-col md:flex-row justify-between items-center gap-md bg-surface-container-highest dark:bg-inverse-surface border-t border-outline-variant mt-auto">
-<div class="font-label-caps text-label-caps font-bold text-on-surface dark:text-inverse-on-surface">
-            © 2026 ECE Department - Contest to Career Initiative
-        </div>
+    <!-- Bottom Navigation Footer Bar -->
+    <nav class="mt-12 p-4 bg-white/90 backdrop-blur-md rounded-2xl border border-slate-200 flex items-center justify-between shadow-sm">
+      <div>
+        <a href="semester-4.html" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-white border border-slate-200 text-xs font-semibold text-slate-700 hover:border-blue-300 hover:text-blue-600 hover:bg-blue-50 transition-all shadow-2xs">
+        <span class="material-symbols-outlined text-[16px]">arrow_back</span> Sem IV
+       </a>
+      </div>
+      <div>
+        <a href="semester-6.html" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-blue-600 border border-blue-600 text-xs font-semibold text-white hover:bg-blue-700 transition-all shadow-sm">
+        Sem VI <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+       </a>
+      </div>
+    </nav>
 
-</footer>
-</body></html>
+  </main>
+
+  <!-- Footer -->
+  <footer class="w-full py-6 px-4 bg-white border-t border-slate-200 text-center text-xs text-slate-500 mt-auto">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2">
+      <p class="font-medium">© 2026 SRM TRP Engineering College • Department of Electronics &amp; Communication Engineering</p>
+      <p class="text-slate-400">R2026 Autonomous Curriculum &amp; Syllabi Framework</p>
+    </div>
+  </footer>
+</body>
+</html>

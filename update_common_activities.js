@@ -5,14 +5,14 @@ const cheerio = require('cheerio');
 const commonActivities = {
   "1": {
     "Software": [
-      "Develop C programs for arithmetic operations, expressions, and bitwise data manipulation.",
-      "Implement decision control flow, iterative loops, and modular user-defined functions in C.",
-      "Build structured data processing applications using arrays, pointers, structures, and file I/O."
+      "Solve engineering calculation problems using C programs involving arithmetic operations, formulas, unit conversions, and numerical computations.",
+      "Develop and debug C programs for engineering problem-solving using decision-making, loops, functions, and logical conditions.",
+      "Implement array and pointer-based C programs to perform data storage, manipulation, searching, and processing using memory concepts."
     ],
     "Hardware": [
-      "Verify fundamental DC circuit laws, network theorems, and resistive voltage dividers on breadboard.",
-      "Analyze AC circuit resonance, frequency response, and transient behavior using DSO.",
-      "Construct and test diode rectifiers, wave-shaping clippers/clampers, and BJT/Op-Amp switching circuits."
+      "Design and develop a smart circuit application integrating battery level indication, variable-load control, energy optimization, and power management.",
+      "Design and demonstrate transient, resonance, and diode-based circuits including RC delay, resonant frequency measurement, over-voltage/reverse-polarity protection, and voltage regulation.",
+      "Design and implement transistor-based electronic applications including automatic switching and transistor amplifier circuits."
     ]
   },
   "2": {

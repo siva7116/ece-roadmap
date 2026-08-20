@@ -4,8 +4,8 @@
   "description": "ECE Industry Readiness Roadmap",
   "scripts": {
     "build": "node build.js",
-    "start": "npx serve stitch_ece_industry_readiness_roadmap/site -l 3000",
-    "dev": "npm run build && npx serve stitch_ece_industry_readiness_roadmap/site -l 3000"
+    "start": "node server.js",
+    "dev": "npm run build && node server.js"
   },
   "dependencies": {
     "cheerio": "^1.2.0"
