@@ -34,7 +34,10 @@ const links = [
 ];
 
 Object.entries(map).forEach(([folder, filename]) => {
-  const filePath = path.join(baseDir, folder, 'code.html');
+  let filePath = path.join(__dirname, folder, 'code.html');
+  if (!fs.existsSync(filePath)) {
+    filePath = path.join(baseDir, folder, 'code.html');
+  }
   if (fs.existsSync(filePath)) {
     let content = fs.readFileSync(filePath, 'utf-8');
     
