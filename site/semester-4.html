@@ -82,6 +82,15 @@
       transform: translateY(-4px);
       box-shadow: 0 20px 35px -10px rgba(16, 185, 129, 0.16), 0 0 0 1.5px rgba(16, 185, 129, 0.35);
     }
+    .innovation-card {
+      background: linear-gradient(180deg, rgba(255,255,255,0.98) 0%, rgba(255, 251, 245, 0.95) 100%);
+      border: 1.5px solid rgba(254, 215, 170, 0.95);
+      transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .innovation-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 20px 35px -10px rgba(234, 88, 12, 0.16), 0 0 0 1.5px rgba(249, 115, 22, 0.35);
+    }
     .activity-item {
       transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
     }
@@ -98,9 +107,9 @@
       animation: fadeInUp 0.45s cubic-bezier(0.16, 1, 0.3, 1) forwards;
     }
   </style>
-
 </head>
 <body class="min-h-screen flex flex-col antialiased">
+
   
   <nav class="sticky top-0 w-full z-50 glass-nav border-b">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
@@ -143,17 +152,17 @@
     </div>
   </nav>
   
-
+  
   <main class="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8 animate-fade-up">
     
     <!-- Semester Breadcrumb & Header Hero -->
-    <header class="mb-8 bg-white/90 backdrop-blur-md rounded-2xl border border-slate-200/80 p-6 shadow-sm">
+    <header class="mb-6 bg-white/90 backdrop-blur-md rounded-2xl border border-slate-200/80 p-6 shadow-sm">
       <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
         <div>
           <div class="flex items-center gap-2 mb-1.5">
             <span class="inline-flex items-center gap-1 text-[11px] font-bold uppercase tracking-wider px-2.5 py-0.5 rounded-md bg-blue-50 text-blue-700 border border-blue-200">
               <span class="w-1.5 h-1.5 rounded-full bg-blue-600 animate-pulse"></span>
-              Semester IV • 2nd Year • AI & Embedded
+              Semester IV • 2nd Year • VLSI, Embedded & Edge AI
             </span>
             <span class="text-xs text-slate-400">•</span>
             <span class="text-xs font-medium text-slate-500">Autonomous R2026</span>
@@ -162,7 +171,7 @@
             Semester IV Industry Readiness Roadmap
           </h1>
           <p class="text-sm sm:text-base text-slate-600 mt-1 max-w-3xl leading-relaxed">
-            Integrated dual-path framework: Software Engineering &amp; Core Hardware tracks aligned with university subjects and global challenges.
+            Build the core VLSI, Embedded and AI skills required for advanced ECE competitions and placements.
           </p>
         </div>
 
@@ -178,351 +187,637 @@
       </div>
     </header>
 
-    <!-- Dual Path Comparison Grid -->
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
-      
-      <!-- PATH 1: SOFTWARE FOCUS -->
-      <section class="flex flex-col software-card rounded-2xl p-6 sm:p-7 shadow-xs">
-        
-        <!-- Header Banner -->
-        <div class="rounded-xl overflow-hidden mb-6 border border-blue-200/70 shadow-xs">
-          <div class="h-40 w-full overflow-hidden relative bg-blue-900">
-            <img src="path1_software.png" class="w-full h-full object-cover opacity-90 hover:scale-105 transition-transform duration-500" alt="Software Path">
-            <div class="absolute inset-0 bg-gradient-to-t from-blue-950/80 via-transparent to-transparent"></div>
-            <div class="absolute top-3 right-3 px-2.5 py-1 rounded-full bg-white/90 backdrop-blur-md text-[11px] font-bold text-blue-700 shadow-xs flex items-center gap-1">
-              <span class="material-symbols-outlined text-[14px]">code</span> Track 1
-            </div>
-          </div>
-          <div class="bg-gradient-to-r from-blue-700 via-blue-800 to-indigo-800 py-3.5 px-5 text-white flex items-center justify-between">
-            <div>
-              <span class="text-[10px] uppercase font-bold tracking-widest text-blue-200">Track 01</span>
-              <h2 class="font-heading font-extrabold text-lg text-white tracking-wide">PATH 1 (SOFTWARE)</h2>
-            </div>
-            <span class="material-symbols-outlined text-2xl text-blue-200">terminal</span>
-          </div>
-        </div>
+    <!-- Career Pathway Progression Bar -->
+    <div class="mb-8 p-3.5 bg-white/80 backdrop-blur-md rounded-2xl border border-slate-200 shadow-xs flex flex-wrap items-center justify-between gap-2.5 text-xs font-semibold text-slate-700">
+      <div class="flex items-center gap-1.5"><span class="w-5 h-5 rounded-full bg-blue-100 text-blue-700 flex items-center justify-center font-bold text-[10px]">1</span> Curriculum</div>
+      <span class="text-slate-300">→</span>
+      <div class="flex items-center gap-1.5"><span class="w-5 h-5 rounded-full bg-indigo-100 text-indigo-700 flex items-center justify-center font-bold text-[10px]">2</span> Skill Gap</div>
+      <span class="text-slate-300">→</span>
+      <div class="flex items-center gap-1.5"><span class="w-5 h-5 rounded-full bg-purple-100 text-purple-700 flex items-center justify-center font-bold text-[10px]">3</span> 5 Hands-on Activities</div>
+      <span class="text-slate-300">→</span>
+      <div class="flex items-center gap-1.5"><span class="w-5 h-5 rounded-full bg-amber-100 text-amber-700 flex items-center justify-center font-bold text-[10px]">4</span> Department Pre-Contest</div>
+      <span class="text-slate-300">→</span>
+      <div class="flex items-center gap-1.5"><span class="w-5 h-5 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center font-bold text-[10px]">5</span> External Hackathon</div>
+      <span class="text-slate-300">→</span>
+      <div class="flex items-center gap-1.5"><span class="w-5 h-5 rounded-full bg-teal-100 text-teal-700 flex items-center justify-center font-bold text-[10px]">6</span> Core Placement</div>
+    </div>
+  
 
-        <!-- Target Contest Card -->
-        <div class="bg-white rounded-xl border border-blue-100 p-4 mb-5 shadow-2xs">
-          <div class="flex items-start justify-between gap-2 mb-1.5">
-            <span class="text-[11px] font-bold uppercase tracking-wider text-blue-600 flex items-center gap-1">
-              <span class="material-symbols-outlined text-[15px]">emoji_events</span> Target Contest / Goal
-            </span>
-            <span class="px-2 py-0.5 rounded-full bg-blue-50 text-blue-700 text-[10px] font-semibold">Software Track</span>
-          </div>
-          <h3 class="font-heading font-bold text-lg text-slate-900 mb-2">Kaggle Competitions</h3>
-          <a href="https://www.kaggle.com/competitions" target="_blank" class="inline-flex items-center gap-1.5 text-xs font-semibold text-blue-600 hover:text-blue-800 hover:underline bg-blue-50/80 px-2.5 py-1 rounded-md border border-blue-100 transition-colors w-max group">
-            <span class="material-symbols-outlined text-[14px]">link</span> Visit Website 
-            <span class="material-symbols-outlined text-[14px] group-hover:translate-x-0.5 transition-transform">open_in_new</span>
-          </a>
-        </div>
-
-        <!-- Subject Mapped & Skill Gap -->
-        <div class="space-y-3.5 mb-5">
-          <div class="p-4 bg-slate-50/90 rounded-xl border border-slate-200/80">
-            <div class="flex items-center justify-between mb-1">
-              <h4 class="text-[11px] font-bold uppercase tracking-wider text-slate-500 flex items-center gap-1">
-                <span class="material-symbols-outlined text-[15px] text-blue-600">book</span> Subject Mapped
-              </h4>
-              <span class="text-[11px] font-semibold px-2 py-0.5 rounded bg-white text-slate-600 border border-slate-200">ES Core</span>
-            </div>
-            <!-- Increased Content Font Size -->
-            <p class="font-heading font-extrabold text-lg sm:text-xl text-slate-900">Artificial Intelligence and Machine Learning</p>
-          </div>
-
-          <div class="p-4 bg-amber-50/70 rounded-xl border-l-4 border-amber-500 border-t border-r border-b border-amber-200/70">
-            <h4 class="text-[11px] font-bold uppercase tracking-wider text-amber-900 mb-1 flex items-center gap-1">
-              <span class="material-symbols-outlined text-[15px] text-amber-600">psychology_alt</span> Skill Gap Identified
-            </h4>
-            <!-- Increased Content Font Size -->
-            <p class="text-base text-slate-800 leading-relaxed font-normal">Limited exposure to AI/ML methods for engineering problems. Need hands-on experience with sensor datasets, models, and ML pipelines.</p>
-          </div>
-        </div>
-
-        <!-- 2 Common Activities (Enlarged Content) -->
-        <div class="mb-5">
-          <h4 class="text-[11px] font-bold uppercase tracking-wider text-slate-500 mb-2.5 flex items-center gap-1">
-            <span class="material-symbols-outlined text-[15px] text-blue-600">task_alt</span> Core Hands-on Activities (2 Common)
-          </h4>
-          <div class="space-y-3">
-            <div class="activity-item flex items-start gap-3.5 bg-white p-3.5 rounded-xl border border-slate-200 shadow-2xs">
-              <span class="w-7 h-7 rounded-lg bg-gradient-to-br from-blue-600 to-indigo-600 text-white text-sm font-bold flex items-center justify-center shrink-0 mt-0.5 shadow-2xs">1</span>
-              <span class="text-base text-slate-900 font-medium leading-relaxed">Perform data cleaning, normalization, exploratory data analysis (EDA), and feature engineering on engineering datasets.</span>
-            </div>
-            <div class="activity-item flex items-start gap-3.5 bg-white p-3.5 rounded-xl border border-slate-200 shadow-2xs">
-              <span class="w-7 h-7 rounded-lg bg-gradient-to-br from-blue-600 to-indigo-600 text-white text-sm font-bold flex items-center justify-center shrink-0 mt-0.5 shadow-2xs">2</span>
-              <span class="text-base text-slate-900 font-medium leading-relaxed">Train, optimize, and evaluate supervised and unsupervised machine learning models (Regression, Decision Trees, SVMs, and Clustering) using Scikit-Learn.</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Platform & Pre-Contest Challenge (Enlarged Content) -->
-        <div class="mt-auto pt-4 border-t border-slate-200/80 space-y-3">
-          <div class="p-3.5 bg-white rounded-xl border border-slate-200 flex items-start gap-3">
-            <span class="material-symbols-outlined text-xl text-blue-600 mt-0.5">laptop_mac</span>
-            <div>
-              <span class="text-[10px] uppercase font-bold tracking-wider text-slate-400 block">Recommended Platform</span>
-              <span class="text-base font-bold text-slate-900">Kaggle & Jupyter Notebooks</span>
-              <p class="text-sm text-slate-600 mt-0.5 leading-relaxed">Scikit-learn model training, feature engineering, cross-validation, and competitive notebooks.</p>
-            </div>
-          </div>
-
-          <div class="p-3.5 bg-gradient-to-r from-blue-50 to-indigo-50/50 rounded-xl border border-blue-200/80 flex items-center gap-3">
-            <span class="w-8 h-8 rounded-lg bg-blue-600 text-white flex items-center justify-center shrink-0 shadow-2xs">
-              <span class="material-symbols-outlined text-base">military_tech</span>
-            </span>
-            <div>
-              <span class="text-[10px] uppercase font-bold tracking-wider text-blue-700 block">Pre-Contest / Department Challenge</span>
-              <span class="text-base font-bold text-slate-900">Kaggle ML Challenge</span>
-            </div>
-          </div>
-        </div>
-
-      </section>
-
-      <!-- RIGHT COLUMN: HARDWARE / ECE CORE FOCUS -->
+    <!-- 2x2 Grid for 4 Core Subjects -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start mb-8">
       <div class="flex flex-col gap-8 w-full">
         
-        <!-- TRACK 2A: VLSI DESIGN -->
-        <section class="flex flex-col hardware-card rounded-2xl p-6 sm:p-7 shadow-xs">
-          
-          <!-- Header Banner -->
-          <div class="rounded-xl overflow-hidden mb-6 border border-emerald-200/70 shadow-xs">
-            <div class="h-40 w-full overflow-hidden relative bg-emerald-950">
-              <img src="path2_hardware.png" class="w-full h-full object-cover opacity-90 hover:scale-105 transition-transform duration-500" alt="VLSI Path">
-              <div class="absolute inset-0 bg-gradient-to-t from-emerald-950/80 via-transparent to-transparent"></div>
-              <div class="absolute top-3 right-3 px-2.5 py-1 rounded-full bg-white/90 backdrop-blur-md text-[11px] font-bold text-emerald-700 shadow-xs flex items-center gap-1">
-                <span class="material-symbols-outlined text-[14px]">memory</span> Track 2A
-              </div>
-            </div>
-            <div class="bg-gradient-to-r from-emerald-700 via-emerald-800 to-teal-800 py-3.5 px-5 text-white flex items-center justify-between">
-              <div>
-                <span class="text-[10px] uppercase font-bold tracking-widest text-emerald-200">Track 02A • Silicon Verification</span>
-                <h2 class="font-heading font-extrabold text-lg text-white tracking-wide">PATH 2 (VLSI DESIGN)</h2>
-              </div>
-              <span class="material-symbols-outlined text-2xl text-emerald-200">developer_board</span>
-            </div>
-          </div>
-
-          <!-- Target Contest Card -->
-          <div class="bg-white rounded-xl border border-emerald-100 p-4 mb-5 shadow-2xs">
-            <div class="flex items-start justify-between gap-2 mb-1.5">
-              <span class="text-[11px] font-bold uppercase tracking-wider text-emerald-600 flex items-center gap-1">
-                <span class="material-symbols-outlined text-[15px]">emoji_events</span> Target Contest / Goal
-              </span>
-              <span class="px-2 py-0.5 rounded-full bg-emerald-50 text-emerald-700 text-[10px] font-semibold">Hardware Track</span>
-            </div>
-            <h3 class="font-heading font-bold text-lg text-slate-900 mb-2">C2S Analog Design Hackathon</h3>
-            <a href="https://www.c2s.gov.in" target="_blank" class="inline-flex items-center gap-1.5 text-xs font-semibold text-emerald-600 hover:text-emerald-800 hover:underline bg-emerald-50/80 px-2.5 py-1 rounded-md border border-emerald-100 transition-colors w-max group">
-              <span class="material-symbols-outlined text-[14px]">link</span> Visit Website 
-              <span class="material-symbols-outlined text-[14px] group-hover:translate-x-0.5 transition-transform">open_in_new</span>
-            </a>
-          </div>
-
-          <!-- Subject Mapped & Skill Gap -->
-          <div class="space-y-3.5 mb-5">
-            <div class="p-4 bg-slate-50/90 rounded-xl border border-slate-200/80">
-              <div class="flex items-center justify-between mb-1">
-                <h4 class="text-[11px] font-bold uppercase tracking-wider text-slate-500 flex items-center gap-1">
-                  <span class="material-symbols-outlined text-[15px] text-emerald-600">developer_board</span> Subject Mapped
-                </h4>
-                <span class="text-[11px] font-semibold px-2 py-0.5 rounded bg-white text-slate-600 border border-slate-200">2611ECPC401</span>
-              </div>
-              <!-- Increased Content Font Size -->
-              <p class="font-heading font-extrabold text-lg sm:text-xl text-slate-900">VLSI Design</p>
-            </div>
-
-            <div class="p-4 bg-emerald-50/60 rounded-xl border-l-4 border-emerald-500 border-t border-r border-b border-emerald-200/70">
-              <div class="flex items-center justify-between mb-1">
-                <h4 class="text-[11px] font-bold uppercase tracking-wider text-emerald-900 flex items-center gap-1">
-                  <span class="material-symbols-outlined text-[15px] text-emerald-600">construction</span> Main Skill / Skill Gap
-                </h4>
-                <span class="px-2 py-0.5 rounded-full bg-emerald-100 text-emerald-800 text-[10px] font-bold">Break/Verify the Design</span>
-              </div>
-              <!-- Increased Content Font Size -->
-              <p class="text-base text-slate-800 leading-relaxed font-normal"><strong>Main Skill: Break/Verify the Design.</strong> Need practice in SystemVerilog/UVM testbench architecture, functional assertions, coverage metrics, and hardware verification closure.</p>
-            </div>
-          </div>
-
-          <!-- 3 Common Activities (Enlarged Content) -->
-          <div class="mb-5">
-            <h4 class="text-[11px] font-bold uppercase tracking-wider text-slate-500 mb-2.5 flex items-center gap-1">
-              <span class="material-symbols-outlined text-[15px] text-emerald-600">task_alt</span> Core Hands-on Activities (3 Common)
-            </h4>
-            <div class="space-y-3">
-              <div class="activity-item flex items-start gap-3.5 bg-white p-3.5 rounded-xl border border-slate-200 shadow-2xs">
-                <span class="w-7 h-7 rounded-lg bg-gradient-to-br from-emerald-600 to-teal-600 text-white text-sm font-bold flex items-center justify-center shrink-0 mt-0.5 shadow-2xs">1</span>
-                <span class="text-base text-slate-900 font-medium leading-relaxed">Validate RTL digital designs using SystemVerilog testbenches and automated self-checking assertions.</span>
-              </div>
-              <div class="activity-item flex items-start gap-3.5 bg-white p-3.5 rounded-xl border border-slate-200 shadow-2xs">
-                <span class="w-7 h-7 rounded-lg bg-gradient-to-br from-emerald-600 to-teal-600 text-white text-sm font-bold flex items-center justify-center shrink-0 mt-0.5 shadow-2xs">2</span>
-                <span class="text-base text-slate-900 font-medium leading-relaxed">Perform constraint-random stimulus generation, functional coverage measurement, and corner-case verification.</span>
-              </div>
-              <div class="activity-item flex items-start gap-3.5 bg-white p-3.5 rounded-xl border border-slate-200 shadow-2xs">
-                <span class="w-7 h-7 rounded-lg bg-gradient-to-br from-emerald-600 to-teal-600 text-white text-sm font-bold flex items-center justify-center shrink-0 mt-0.5 shadow-2xs">3</span>
-                <span class="text-base text-slate-900 font-medium leading-relaxed">Implement hardware fault simulation, boundary scan/JTAG test access, and FPGA prototype validation.</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Platform & Pre-Contest Challenge (Enlarged Content) -->
-          <div class="mt-auto pt-4 border-t border-slate-200/80 space-y-3">
-            <div class="p-3.5 bg-white rounded-xl border border-slate-200 flex items-start gap-3">
-              <span class="material-symbols-outlined text-xl text-emerald-600 mt-0.5">precision_manufacturing</span>
-              <div>
-                <span class="text-[10px] uppercase font-bold tracking-wider text-slate-400 block">Recommended Tools &amp; Lab</span>
-                <span class="text-base font-bold text-slate-900">SystemVerilog &amp; UVM Verification Lab</span>
-                <p class="text-sm text-slate-600 mt-0.5 leading-relaxed">Constraint-random testing, functional coverage metrics, SystemVerilog assertions, and QuestaSim.</p>
-              </div>
-            </div>
-
-            <div class="p-3.5 bg-gradient-to-r from-emerald-50 to-teal-50/50 rounded-xl border border-emerald-200/80 flex items-center gap-3">
-              <span class="w-8 h-8 rounded-lg bg-emerald-600 text-white flex items-center justify-center shrink-0 shadow-2xs">
-                <span class="material-symbols-outlined text-base">military_tech</span>
-              </span>
-              <div>
-                <span class="text-[10px] uppercase font-bold tracking-wider text-emerald-700 block">Pre-Contest / Hardware Challenge</span>
-                <span class="text-base font-bold text-slate-900">ChipForge – Verify Challenge</span>
-              </div>
-            </div>
-          </div>
-
-        </section>
-
-        <!-- TRACK 2B: ELECTROMAGNETIC FIELDS AND ANTENNAS -->
-        <section class="flex flex-col hardware-card rounded-2xl p-6 sm:p-7 shadow-xs">
-          
-          <!-- Header Banner -->
-          <div class="rounded-xl overflow-hidden mb-6 border border-teal-200/70 shadow-xs">
-            <div class="h-40 w-full overflow-hidden relative bg-teal-950">
-              <img src="path2_hardware.png" class="w-full h-full object-cover opacity-90 hover:scale-105 transition-transform duration-500" alt="Electromagnetics Path">
-              <div class="absolute inset-0 bg-gradient-to-t from-teal-950/80 via-transparent to-transparent"></div>
-              <div class="absolute top-3 right-3 px-2.5 py-1 rounded-full bg-white/90 backdrop-blur-md text-[11px] font-bold text-teal-700 shadow-xs flex items-center gap-1">
-                <span class="material-symbols-outlined text-[14px]">cell_tower</span> Track 2B
-              </div>
-            </div>
-            <div class="bg-gradient-to-r from-teal-700 via-emerald-800 to-cyan-900 py-3.5 px-5 text-white flex items-center justify-between">
-              <div>
-                <span class="text-[10px] uppercase font-bold tracking-widest text-teal-200">Track 02B • Electromagnetics &amp; RF Focus</span>
-                <h2 class="font-heading font-extrabold text-lg text-white tracking-wide">PATH 2 (ELECTROMAGNETIC FIELDS AND ANTENNAS)</h2>
-              </div>
-              <span class="material-symbols-outlined text-2xl text-teal-200">sensors</span>
-            </div>
-          </div>
-
-          <!-- Target Contest Card -->
-          <div class="bg-white rounded-xl border border-teal-100 p-4 mb-5 shadow-2xs">
-            <div class="flex items-start justify-between gap-2 mb-1.5">
-              <span class="text-[11px] font-bold uppercase tracking-wider text-teal-600 flex items-center gap-1">
-                <span class="material-symbols-outlined text-[15px]">emoji_events</span> Target Contest / Goal
-              </span>
-              <span class="px-2 py-0.5 rounded-full bg-teal-50 text-teal-700 text-[10px] font-semibold">RF &amp; Electromagnetics Track</span>
-            </div>
-            <h3 class="font-heading font-bold text-lg text-slate-900 mb-2">IEEE AP-S Student Antenna Design Contest</h3>
-            <a href="https://ieeeaps.org" target="_blank" class="inline-flex items-center gap-1.5 text-xs font-semibold text-teal-600 hover:text-teal-800 hover:underline bg-teal-50/80 px-2.5 py-1 rounded-md border border-teal-100 transition-colors w-max group">
-              <span class="material-symbols-outlined text-[14px]">link</span> Visit Website 
-              <span class="material-symbols-outlined text-[14px] group-hover:translate-x-0.5 transition-transform">open_in_new</span>
-            </a>
-          </div>
-
-          <!-- Subject Mapped & Skill Gap -->
-          <div class="space-y-3.5 mb-5">
-            <div class="p-4 bg-slate-50/90 rounded-xl border border-slate-200/80">
-              <div class="flex items-center justify-between mb-1">
-                <h4 class="text-[11px] font-bold uppercase tracking-wider text-slate-500 flex items-center gap-1">
-                  <span class="material-symbols-outlined text-[15px] text-teal-600">developer_board</span> Subject Mapped
-                </h4>
-                <span class="text-[11px] font-semibold px-2 py-0.5 rounded bg-white text-slate-600 border border-slate-200">2611ECPC402</span>
-              </div>
-              <!-- Increased Content Font Size -->
-              <p class="font-heading font-extrabold text-lg sm:text-xl text-slate-900">Electromagnetic Fields and Antennas</p>
-            </div>
-
-            <div class="p-4 bg-teal-50/60 rounded-xl border-l-4 border-teal-500 border-t border-r border-b border-teal-200/70">
-              <h4 class="text-[11px] font-bold uppercase tracking-wider text-teal-900 mb-1 flex items-center gap-1">
-                <span class="material-symbols-outlined text-[15px] text-teal-600">psychology_alt</span> Skill Gap Identified
-              </h4>
-              <!-- Increased Content Font Size -->
-              <p class="text-base text-slate-800 leading-relaxed font-normal">Limited practical understanding of electromagnetic field behaviour and antenna performance. Need stronger skills in field analysis, simulation, and antenna testing.</p>
-            </div>
-          </div>
-
-          <!-- 3 Common Activities (Enlarged Content) -->
-          <div class="mb-5">
-            <h4 class="text-[11px] font-bold uppercase tracking-wider text-slate-500 mb-2.5 flex items-center gap-1">
-              <span class="material-symbols-outlined text-[15px] text-teal-600">task_alt</span> Core Hands-on Activities &amp; GATE Prep (3 Common)
-            </h4>
-            <div class="space-y-3">
-              <div class="activity-item flex items-start gap-3.5 bg-white p-3.5 rounded-xl border border-slate-200 shadow-2xs">
-                <span class="w-7 h-7 rounded-lg bg-gradient-to-br from-teal-600 to-emerald-600 text-white text-sm font-bold flex items-center justify-center shrink-0 mt-0.5 shadow-2xs">1</span>
-                <div>
-                  <span class="text-base text-slate-900 font-bold block mb-0.5">Electromagnetic Field Visualization</span>
-                  <p class="text-sm text-slate-600 leading-relaxed">Simulate electric and magnetic fields and observe their patterns.</p>
-                </div>
-              </div>
-              <div class="activity-item flex items-start gap-3.5 bg-white p-3.5 rounded-xl border border-slate-200 shadow-2xs">
-                <span class="w-7 h-7 rounded-lg bg-gradient-to-br from-teal-600 to-emerald-600 text-white text-sm font-bold flex items-center justify-center shrink-0 mt-0.5 shadow-2xs">2</span>
-                <div>
-                  <span class="text-base text-slate-900 font-bold block mb-0.5">Antenna Radiation Pattern Testing</span>
-                  <p class="text-sm text-slate-600 leading-relaxed">Plot a simple antenna’s radiation pattern and find its strongest direction.</p>
-                </div>
-              </div>
-              <div class="activity-item flex items-start gap-3.5 bg-white p-3.5 rounded-xl border border-slate-200 shadow-2xs">
-                <span class="w-7 h-7 rounded-lg bg-gradient-to-br from-teal-600 to-emerald-600 text-white text-sm font-bold flex items-center justify-center shrink-0 mt-0.5 shadow-2xs">3</span>
-                <div>
-                  <span class="text-base text-slate-900 font-bold block mb-0.5">GATE Problem-Solving Challenge</span>
-                  <p class="text-sm text-slate-600 leading-relaxed">Solve selected GATE ECE questions on electromagnetic fields and antennas to improve exam-oriented problem-solving skills.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Platform & Pre-Contest Challenge (Enlarged Content) -->
-          <div class="mt-auto pt-4 border-t border-slate-200/80 space-y-3">
-            <div class="p-3.5 bg-white rounded-xl border border-slate-200 flex items-start gap-3">
-              <span class="material-symbols-outlined text-xl text-teal-600 mt-0.5">laptop_mac</span>
-              <div>
-                <span class="text-[10px] uppercase font-bold tracking-wider text-slate-400 block">Recommended Platform</span>
-                <span class="text-base font-bold text-slate-900">MATLAB &amp; CST / HFSS</span>
-                <p class="text-sm text-slate-600 mt-0.5 leading-relaxed">Field visualization, antenna simulation, and radiation-pattern analysis.</p>
-              </div>
-            </div>
-
-            <div class="p-3.5 bg-white rounded-xl border border-slate-200 flex items-start gap-3">
-              <span class="material-symbols-outlined text-xl text-teal-600 mt-0.5">science</span>
-              <div>
-                <span class="text-[10px] uppercase font-bold tracking-wider text-slate-400 block">Recommended Tools &amp; Lab</span>
-                <span class="text-base font-bold text-slate-900">Antenna &amp; EM Simulation Lab</span>
-                <p class="text-sm text-slate-600 mt-0.5 leading-relaxed">Simulate electromagnetic fields and analyze antenna characteristics.</p>
-              </div>
-            </div>
-
-            <div class="p-3.5 bg-gradient-to-r from-teal-50 to-emerald-50/50 rounded-xl border border-teal-200/80 flex items-center gap-3">
-              <span class="w-8 h-8 rounded-lg bg-teal-600 text-white flex items-center justify-center shrink-0 shadow-2xs">
-                <span class="material-symbols-outlined text-base">military_tech</span>
-              </span>
-              <div>
-                <span class="text-[10px] uppercase font-bold tracking-wider text-teal-700 block">Pre-Contest / Hardware Challenge</span>
-                <span class="text-base font-bold text-slate-900">Antenna Design Challenge</span>
-              </div>
-            </div>
-          </div>
-
-        </section>
-
+  <!-- PATH 1 (VLSI DESIGN) -->
+  <section class="flex flex-col hardware-card rounded-2xl p-6 sm:p-7 shadow-xs">
+    
+    <!-- Header Banner -->
+    <div class="rounded-xl overflow-hidden mb-6 border border-emerald-200/70 shadow-xs">
+      <div class="h-40 w-full overflow-hidden relative bg-slate-950">
+        <img src="path2_hardware.png" class="w-full h-full object-cover opacity-90 hover:scale-105 transition-transform duration-500" alt="PATH 1 (VLSI DESIGN)">
+        <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent"></div>
+        <div class="absolute top-3 right-3 px-2.5 py-1 rounded-full bg-white/90 backdrop-blur-md text-[11px] font-bold text-emerald-600 shadow-xs flex items-center gap-1">
+          <span class="material-symbols-outlined text-[14px]">developer_board</span> Track 2A
+        </div>
       </div>
-
+      <div class="bg-gradient-to-r from-emerald-700 via-emerald-800 to-teal-800 py-3.5 px-5 text-white flex items-center justify-between">
+        <div>
+          <span class="text-[10px] uppercase font-bold tracking-widest text-emerald-200">Track 02A • VLSI & RTL Semiconductor Design</span>
+          <h2 class="font-heading font-extrabold text-lg text-white tracking-wide">PATH 1 (VLSI DESIGN)</h2>
+        </div>
+        <span class="material-symbols-outlined text-2xl text-emerald-200">developer_board</span>
+      </div>
     </div>
 
+    <!-- Target Contest Card -->
+    <div class="bg-white rounded-xl border border-slate-200 p-4 mb-5 shadow-2xs">
+      <div class="flex items-start justify-between gap-2 mb-1.5">
+        <span class="text-[11px] font-bold uppercase tracking-wider text-emerald-600 flex items-center gap-1">
+          <span class="material-symbols-outlined text-[15px]">emoji_events</span> Target Contest / Goal
+        </span>
+        <span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-red-50 text-red-700 border border-red-200 text-[10px] font-extrabold uppercase tracking-wider"><span class="w-1.5 h-1.5 rounded-full bg-red-600 animate-pulse"></span> 🔴 Core Career Priority</span>
+      </div>
+      <h3 class="font-heading font-bold text-lg text-slate-900 mb-2">C2S • FPGA Design Challenges • RTL Design Challenges • VLSI Design Challenges • Semiconductor Placement</h3>
+      <div class="flex flex-wrap gap-2">
+        
+    <a href="https://c2s.gov.in" target="_blank" class="inline-flex items-center gap-1.5 text-xs font-semibold text-emerald-600 hover:underline bg-slate-50 px-2.5 py-1 rounded-md border border-slate-200 transition-colors w-max group">
+      <span class="material-symbols-outlined text-[14px]">link</span> C2S India 
+      <span class="material-symbols-outlined text-[14px] group-hover:translate-x-0.5 transition-transform">open_in_new</span>
+    </a>
+  
+
+    <a href="https://www.xilinx.com/products/design-tools/vivado.html" target="_blank" class="inline-flex items-center gap-1.5 text-xs font-semibold text-emerald-600 hover:underline bg-slate-50 px-2.5 py-1 rounded-md border border-slate-200 transition-colors w-max group">
+      <span class="material-symbols-outlined text-[14px]">link</span> Xilinx Vivado 
+      <span class="material-symbols-outlined text-[14px] group-hover:translate-x-0.5 transition-transform">open_in_new</span>
+    </a>
+  
+      </div>
+    </div>
+
+    <!-- Subject Mapped & Skill Gap -->
+    <div class="space-y-3.5 mb-5">
+      <div class="p-4 bg-slate-50/90 rounded-xl border border-slate-200/80">
+        <div class="flex items-center justify-between mb-1.5">
+          <h4 class="text-[11px] font-bold uppercase tracking-wider text-slate-500 flex items-center gap-1">
+            <span class="material-symbols-outlined text-[15px] text-emerald-600">book</span> Subject Mapped
+          </h4>
+          <div class="flex items-center gap-1.5">
+            
+            <span class="text-[11px] font-semibold px-2 py-0.5 rounded bg-white text-slate-600 border border-slate-200">2611ECPC401</span>
+          </div>
+        </div>
+        <p class="font-heading font-extrabold text-lg sm:text-xl text-slate-900">VLSI Design</p>
+      </div>
+
+      <div class="p-4 bg-amber-50/70 rounded-xl border-l-4 border-amber-500 border-t border-r border-b border-amber-200/70">
+        <h4 class="text-[11px] font-bold uppercase tracking-wider text-amber-900 mb-1 flex items-center gap-1">
+          <span class="material-symbols-outlined text-[15px] text-amber-600">psychology_alt</span> Skill Gap Identified
+        </h4>
+        <p class="text-base text-slate-800 leading-relaxed font-normal">Students need to move from VLSI concepts to design decisions involving Architecture, RTL, Area, Power, Timing, Verification, and Optimization.</p>
+      </div>
+    </div>
+
+    <!-- 5 Core Hands-on Activities -->
+    <div class="mb-5">
+      <h4 class="text-[11px] font-bold uppercase tracking-wider text-slate-500 mb-2.5 flex items-center gap-1">
+        <span class="material-symbols-outlined text-[15px] text-emerald-600">task_alt</span> Core Hands-on Activities (5 Units)
+      </h4>
+      <div class="space-y-3">
+        
+    <div class="activity-item flex items-start gap-3.5 bg-white p-3.5 rounded-xl border border-slate-200 shadow-2xs">
+      <span class="w-7 h-7 rounded-lg bg-gradient-to-br from-emerald-600 to-teal-600 text-white text-sm font-bold flex items-center justify-center shrink-0 mt-0.5 shadow-2xs">1</span>
+      <div>
+        <h5 class="text-base font-bold text-slate-900">RTL Architecture Selection Under Constraints</h5>
+        <p class="text-sm text-slate-600 mt-0.5 leading-relaxed">Compare pipelined vs. iterative RTL architectures for arithmetic and signal processing blocks under strict clock latency budgets.</p>
+      </div>
+    </div>
+  
+
+    <div class="activity-item flex items-start gap-3.5 bg-white p-3.5 rounded-xl border border-slate-200 shadow-2xs">
+      <span class="w-7 h-7 rounded-lg bg-gradient-to-br from-emerald-600 to-teal-600 text-white text-sm font-bold flex items-center justify-center shrink-0 mt-0.5 shadow-2xs">2</span>
+      <div>
+        <h5 class="text-base font-bold text-slate-900">PPA Optimization Challenge</h5>
+        <p class="text-sm text-slate-600 mt-0.5 leading-relaxed">Optimize Verilog/SystemVerilog RTL for Power-Performance-Area (PPA) trade-offs using clock gating and resource sharing.</p>
+      </div>
+    </div>
+  
+
+    <div class="activity-item flex items-start gap-3.5 bg-white p-3.5 rounded-xl border border-slate-200 shadow-2xs">
+      <span class="w-7 h-7 rounded-lg bg-gradient-to-br from-emerald-600 to-teal-600 text-white text-sm font-bold flex items-center justify-center shrink-0 mt-0.5 shadow-2xs">3</span>
+      <div>
+        <h5 class="text-base font-bold text-slate-900">Timing Violation Investigation</h5>
+        <p class="text-sm text-slate-600 mt-0.5 leading-relaxed">Analyze Static Timing Analysis (STA) reports, identify setup/hold slack violations, and resolve critical path bottlenecks.</p>
+      </div>
+    </div>
+  
+
+    <div class="activity-item flex items-start gap-3.5 bg-white p-3.5 rounded-xl border border-slate-200 shadow-2xs">
+      <span class="w-7 h-7 rounded-lg bg-gradient-to-br from-emerald-600 to-teal-600 text-white text-sm font-bold flex items-center justify-center shrink-0 mt-0.5 shadow-2xs">4</span>
+      <div>
+        <h5 class="text-base font-bold text-slate-900">RTL Design Debug Challenge</h5>
+        <p class="text-sm text-slate-600 mt-0.5 leading-relaxed">Identify and fix race conditions, unclocked latches, and metastability issues in complex multi-clock RTL designs using testbenches.</p>
+      </div>
+    </div>
+  
+
+    <div class="activity-item flex items-start gap-3.5 bg-white p-3.5 rounded-xl border border-slate-200 shadow-2xs">
+      <span class="w-7 h-7 rounded-lg bg-gradient-to-br from-emerald-600 to-teal-600 text-white text-sm font-bold flex items-center justify-center shrink-0 mt-0.5 shadow-2xs">5</span>
+      <div>
+        <h5 class="text-base font-bold text-slate-900">Mini RTL-to-Design Contest</h5>
+        <p class="text-sm text-slate-600 mt-0.5 leading-relaxed">Synthesize, place, and route a high-speed DSP or crypto accelerator block on an FPGA target with timing closure in Xilinx Vivado.</p>
+      </div>
+    </div>
+  
+      </div>
+    </div>
+
+    <!-- Platform & Pre-Contest Challenge -->
+    <div class="mt-auto pt-4 border-t border-slate-200/80 space-y-3">
+      <div class="p-3.5 bg-white rounded-xl border border-slate-200 flex items-start gap-3">
+        <span class="material-symbols-outlined text-xl text-emerald-600 mt-0.5">memory</span>
+        <div>
+          <span class="text-[10px] uppercase font-bold tracking-wider text-slate-400 block">Recommended Platform / Tool</span>
+          <span class="text-base font-bold text-slate-900">Cadence, Synopsys, Siemens EDA & Xilinx Vivado</span>
+          <p class="text-sm text-slate-600 mt-0.5 leading-relaxed">RTL synthesis, simulation testbenches, static timing analysis (STA), FPGA bitstream generation, and hardware verification.</p>
+        </div>
+      </div>
+
+      <div class="p-3.5 bg-gradient-to-r from-emerald-50 to-teal-50/50 border-emerald-200/80 text-emerald-700 rounded-xl border flex items-center gap-3">
+        <span class="w-8 h-8 rounded-lg bg-emerald-600 text-white flex items-center justify-center shrink-0 shadow-2xs">
+          <span class="material-symbols-outlined text-base">military_tech</span>
+        </span>
+        <div>
+          <span class="text-[10px] uppercase font-bold tracking-wider block">Pre-Contest / Department Challenge</span>
+          <span class="text-base font-bold text-slate-900">🏆 ECE VLSI Design Challenge</span>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  
+        
+  <!-- PATH 3 (ARTIFICIAL INTELLIGENCE & MACHINE LEARNING) -->
+  <section class="flex flex-col software-card rounded-2xl p-6 sm:p-7 shadow-xs">
+    
+    <!-- Header Banner -->
+    <div class="rounded-xl overflow-hidden mb-6 border border-blue-200/70 shadow-xs">
+      <div class="h-40 w-full overflow-hidden relative bg-slate-950">
+        <img src="path1_software.png" class="w-full h-full object-cover opacity-90 hover:scale-105 transition-transform duration-500" alt="PATH 3 (ARTIFICIAL INTELLIGENCE & MACHINE LEARNING)">
+        <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent"></div>
+        <div class="absolute top-3 right-3 px-2.5 py-1 rounded-full bg-white/90 backdrop-blur-md text-[11px] font-bold text-blue-600 shadow-xs flex items-center gap-1">
+          <span class="material-symbols-outlined text-[14px]">psychology</span> Track 1B
+        </div>
+      </div>
+      <div class="bg-gradient-to-r from-blue-700 via-blue-800 to-indigo-800 py-3.5 px-5 text-white flex items-center justify-between">
+        <div>
+          <span class="text-[10px] uppercase font-bold tracking-widest text-blue-200">Track 01B • Artificial Intelligence & Machine Learning</span>
+          <h2 class="font-heading font-extrabold text-lg text-white tracking-wide">PATH 3 (ARTIFICIAL INTELLIGENCE & MACHINE LEARNING)</h2>
+        </div>
+        <span class="material-symbols-outlined text-2xl text-blue-200">psychology</span>
+      </div>
+    </div>
+
+    <!-- Target Contest Card -->
+    <div class="bg-white rounded-xl border border-slate-200 p-4 mb-5 shadow-2xs">
+      <div class="flex items-start justify-between gap-2 mb-1.5">
+        <span class="text-[11px] font-bold uppercase tracking-wider text-blue-600 flex items-center gap-1">
+          <span class="material-symbols-outlined text-[15px]">emoji_events</span> Target Contest / Goal
+        </span>
+        <span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-red-50 text-red-700 border border-red-200 text-[10px] font-extrabold uppercase tracking-wider"><span class="w-1.5 h-1.5 rounded-full bg-red-600 animate-pulse"></span> 🔴 Core Career Priority</span>
+      </div>
+      <h3 class="font-heading font-bold text-lg text-slate-900 mb-2">Edge-AI Challenges • AI Hackathons • Smart India Hackathon • Embedded AI Challenges</h3>
+      <div class="flex flex-wrap gap-2">
+        
+    <a href="https://scikit-learn.org" target="_blank" class="inline-flex items-center gap-1.5 text-xs font-semibold text-blue-600 hover:underline bg-slate-50 px-2.5 py-1 rounded-md border border-slate-200 transition-colors w-max group">
+      <span class="material-symbols-outlined text-[14px]">link</span> scikit-learn 
+      <span class="material-symbols-outlined text-[14px] group-hover:translate-x-0.5 transition-transform">open_in_new</span>
+    </a>
+  
+
+    <a href="https://colab.research.google.com" target="_blank" class="inline-flex items-center gap-1.5 text-xs font-semibold text-blue-600 hover:underline bg-slate-50 px-2.5 py-1 rounded-md border border-slate-200 transition-colors w-max group">
+      <span class="material-symbols-outlined text-[14px]">link</span> Google Colab 
+      <span class="material-symbols-outlined text-[14px] group-hover:translate-x-0.5 transition-transform">open_in_new</span>
+    </a>
+  
+      </div>
+    </div>
+
+    <!-- Subject Mapped & Skill Gap -->
+    <div class="space-y-3.5 mb-5">
+      <div class="p-4 bg-slate-50/90 rounded-xl border border-slate-200/80">
+        <div class="flex items-center justify-between mb-1.5">
+          <h4 class="text-[11px] font-bold uppercase tracking-wider text-slate-500 flex items-center gap-1">
+            <span class="material-symbols-outlined text-[15px] text-blue-600">book</span> Subject Mapped
+          </h4>
+          <div class="flex items-center gap-1.5">
+            
+            <span class="text-[11px] font-semibold px-2 py-0.5 rounded bg-white text-slate-600 border border-slate-200">2611ECPC403</span>
+          </div>
+        </div>
+        <p class="font-heading font-extrabold text-lg sm:text-xl text-slate-900">Artificial Intelligence and Machine Learning</p>
+      </div>
+
+      <div class="p-4 bg-amber-50/70 rounded-xl border-l-4 border-amber-500 border-t border-r border-b border-amber-200/70">
+        <h4 class="text-[11px] font-bold uppercase tracking-wider text-amber-900 mb-1 flex items-center gap-1">
+          <span class="material-symbols-outlined text-[15px] text-amber-600">psychology_alt</span> Skill Gap Identified
+        </h4>
+        <p class="text-base text-slate-800 leading-relaxed font-normal">Students need to select and apply ML models under realistic engineering constraints (accuracy, memory footprint, inference latency, and dataset noise).</p>
+      </div>
+    </div>
+
+    <!-- 5 Core Hands-on Activities -->
+    <div class="mb-5">
+      <h4 class="text-[11px] font-bold uppercase tracking-wider text-slate-500 mb-2.5 flex items-center gap-1">
+        <span class="material-symbols-outlined text-[15px] text-blue-600">task_alt</span> Core Hands-on Activities (5 Units)
+      </h4>
+      <div class="space-y-3">
+        
+    <div class="activity-item flex items-start gap-3.5 bg-white p-3.5 rounded-xl border border-slate-200 shadow-2xs">
+      <span class="w-7 h-7 rounded-lg bg-gradient-to-br from-blue-600 to-indigo-600 text-white text-sm font-bold flex items-center justify-center shrink-0 mt-0.5 shadow-2xs">1</span>
+      <div>
+        <h5 class="text-base font-bold text-slate-900">ECE Dataset Problem-Formulation Challenge</h5>
+        <p class="text-sm text-slate-600 mt-0.5 leading-relaxed">Preprocess raw sensor and signal datasets (filtering, normalization, windowing) to frame a classification/regression task.</p>
+      </div>
+    </div>
+  
+
+    <div class="activity-item flex items-start gap-3.5 bg-white p-3.5 rounded-xl border border-slate-200 shadow-2xs">
+      <span class="w-7 h-7 rounded-lg bg-gradient-to-br from-blue-600 to-indigo-600 text-white text-sm font-bold flex items-center justify-center shrink-0 mt-0.5 shadow-2xs">2</span>
+      <div>
+        <h5 class="text-base font-bold text-slate-900">Feature-Selection Challenge</h5>
+        <p class="text-sm text-slate-600 mt-0.5 leading-relaxed">Extract time/frequency-domain features (FFT, wavelets, statistical moments) and evaluate feature importance to prevent overfitting.</p>
+      </div>
+    </div>
+  
+
+    <div class="activity-item flex items-start gap-3.5 bg-white p-3.5 rounded-xl border border-slate-200 shadow-2xs">
+      <span class="w-7 h-7 rounded-lg bg-gradient-to-br from-blue-600 to-indigo-600 text-white text-sm font-bold flex items-center justify-center shrink-0 mt-0.5 shadow-2xs">3</span>
+      <div>
+        <h5 class="text-base font-bold text-slate-900">Model-Selection Under Resource Constraints</h5>
+        <p class="text-sm text-slate-600 mt-0.5 leading-relaxed">Benchmark Decision Trees, Random Forests, SVMs, and TinyML architectures against accuracy and RAM/Flash constraints.</p>
+      </div>
+    </div>
+  
+
+    <div class="activity-item flex items-start gap-3.5 bg-white p-3.5 rounded-xl border border-slate-200 shadow-2xs">
+      <span class="w-7 h-7 rounded-lg bg-gradient-to-br from-blue-600 to-indigo-600 text-white text-sm font-bold flex items-center justify-center shrink-0 mt-0.5 shadow-2xs">4</span>
+      <div>
+        <h5 class="text-base font-bold text-slate-900">Misclassification Root-Cause Challenge</h5>
+        <p class="text-sm text-slate-600 mt-0.5 leading-relaxed">Perform confusion matrix error analysis, diagnose class imbalance, and apply data augmentation to resolve edge-case failures.</p>
+      </div>
+    </div>
+  
+
+    <div class="activity-item flex items-start gap-3.5 bg-white p-3.5 rounded-xl border border-slate-200 shadow-2xs">
+      <span class="w-7 h-7 rounded-lg bg-gradient-to-br from-blue-600 to-indigo-600 text-white text-sm font-bold flex items-center justify-center shrink-0 mt-0.5 shadow-2xs">5</span>
+      <div>
+        <h5 class="text-base font-bold text-slate-900">Edge-AI Mini Challenge</h5>
+        <p class="text-sm text-slate-600 mt-0.5 leading-relaxed">Deploy and evaluate a trained scikit-learn/TensorFlow Lite model on an embedded microcontroller to classify sensor gestures in real time.</p>
+      </div>
+    </div>
+  
+      </div>
+    </div>
+
+    <!-- Platform & Pre-Contest Challenge -->
+    <div class="mt-auto pt-4 border-t border-slate-200/80 space-y-3">
+      <div class="p-3.5 bg-white rounded-xl border border-slate-200 flex items-start gap-3">
+        <span class="material-symbols-outlined text-xl text-blue-600 mt-0.5">smart_toy</span>
+        <div>
+          <span class="text-[10px] uppercase font-bold tracking-wider text-slate-400 block">Recommended Platform / Tool</span>
+          <span class="text-base font-bold text-slate-900">Python, Jupyter, scikit-learn & Google Colab</span>
+          <p class="text-sm text-slate-600 mt-0.5 leading-relaxed">Machine learning pipeline development, data cleaning, feature engineering, model evaluation, and export to embedded runtime formats.</p>
+        </div>
+      </div>
+
+      <div class="p-3.5 bg-gradient-to-r from-blue-50 to-indigo-50/50 border-blue-200/80 text-blue-700 rounded-xl border flex items-center gap-3">
+        <span class="w-8 h-8 rounded-lg bg-blue-600 text-white flex items-center justify-center shrink-0 shadow-2xs">
+          <span class="material-symbols-outlined text-base">military_tech</span>
+        </span>
+        <div>
+          <span class="text-[10px] uppercase font-bold tracking-wider block">Pre-Contest / Department Challenge</span>
+          <span class="text-base font-bold text-slate-900">🏆 ECE Edge-AI Challenge</span>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  
+      </div>
+      <div class="flex flex-col gap-8 w-full">
+        
+  <!-- PATH 2 (EMBEDDED C PROGRAMMING) -->
+  <section class="flex flex-col software-card rounded-2xl p-6 sm:p-7 shadow-xs">
+    
+    <!-- Header Banner -->
+    <div class="rounded-xl overflow-hidden mb-6 border border-blue-200/70 shadow-xs">
+      <div class="h-40 w-full overflow-hidden relative bg-slate-950">
+        <img src="path1_software.png" class="w-full h-full object-cover opacity-90 hover:scale-105 transition-transform duration-500" alt="PATH 2 (EMBEDDED C PROGRAMMING)">
+        <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent"></div>
+        <div class="absolute top-3 right-3 px-2.5 py-1 rounded-full bg-white/90 backdrop-blur-md text-[11px] font-bold text-blue-600 shadow-xs flex items-center gap-1">
+          <span class="material-symbols-outlined text-[14px]">terminal</span> Track 1A
+        </div>
+      </div>
+      <div class="bg-gradient-to-r from-blue-700 via-blue-800 to-indigo-800 py-3.5 px-5 text-white flex items-center justify-between">
+        <div>
+          <span class="text-[10px] uppercase font-bold tracking-widest text-blue-200">Track 01A • Embedded Systems & Firmware Engineering</span>
+          <h2 class="font-heading font-extrabold text-lg text-white tracking-wide">PATH 2 (EMBEDDED C PROGRAMMING)</h2>
+        </div>
+        <span class="material-symbols-outlined text-2xl text-blue-200">terminal</span>
+      </div>
+    </div>
+
+    <!-- Target Contest Card -->
+    <div class="bg-white rounded-xl border border-slate-200 p-4 mb-5 shadow-2xs">
+      <div class="flex items-start justify-between gap-2 mb-1.5">
+        <span class="text-[11px] font-bold uppercase tracking-wider text-blue-600 flex items-center gap-1">
+          <span class="material-symbols-outlined text-[15px]">emoji_events</span> Target Contest / Goal
+        </span>
+        <span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-red-50 text-red-700 border border-red-200 text-[10px] font-extrabold uppercase tracking-wider"><span class="w-1.5 h-1.5 rounded-full bg-red-600 animate-pulse"></span> 🔴 Core Career Priority</span>
+      </div>
+      <h3 class="font-heading font-bold text-lg text-slate-900 mb-2">e-Yantra Robotics Competition • Smart India Hackathon Hardware • Embedded Systems Challenges • Embedded Placement</h3>
+      <div class="flex flex-wrap gap-2">
+        
+    <a href="https://www.st.com/en/development-tools/stm32cubeide.html" target="_blank" class="inline-flex items-center gap-1.5 text-xs font-semibold text-blue-600 hover:underline bg-slate-50 px-2.5 py-1 rounded-md border border-slate-200 transition-colors w-max group">
+      <span class="material-symbols-outlined text-[14px]">link</span> STM32CubeIDE 
+      <span class="material-symbols-outlined text-[14px] group-hover:translate-x-0.5 transition-transform">open_in_new</span>
+    </a>
+  
+
+    <a href="https://portal.e-yantra.org" target="_blank" class="inline-flex items-center gap-1.5 text-xs font-semibold text-blue-600 hover:underline bg-slate-50 px-2.5 py-1 rounded-md border border-slate-200 transition-colors w-max group">
+      <span class="material-symbols-outlined text-[14px]">link</span> e-Yantra eYRC 
+      <span class="material-symbols-outlined text-[14px] group-hover:translate-x-0.5 transition-transform">open_in_new</span>
+    </a>
+  
+      </div>
+    </div>
+
+    <!-- Subject Mapped & Skill Gap -->
+    <div class="space-y-3.5 mb-5">
+      <div class="p-4 bg-slate-50/90 rounded-xl border border-slate-200/80">
+        <div class="flex items-center justify-between mb-1.5">
+          <h4 class="text-[11px] font-bold uppercase tracking-wider text-slate-500 flex items-center gap-1">
+            <span class="material-symbols-outlined text-[15px] text-blue-600">book</span> Subject Mapped
+          </h4>
+          <div class="flex items-center gap-1.5">
+            
+            <span class="text-[11px] font-semibold px-2 py-0.5 rounded bg-white text-slate-600 border border-slate-200">2611ECPC402</span>
+          </div>
+        </div>
+        <p class="font-heading font-extrabold text-lg sm:text-xl text-slate-900">Embedded C Programming</p>
+      </div>
+
+      <div class="p-4 bg-amber-50/70 rounded-xl border-l-4 border-amber-500 border-t border-r border-b border-amber-200/70">
+        <h4 class="text-[11px] font-bold uppercase tracking-wider text-amber-900 mb-1 flex items-center gap-1">
+          <span class="material-symbols-outlined text-[15px] text-amber-600">psychology_alt</span> Skill Gap Identified
+        </h4>
+        <p class="text-base text-slate-800 leading-relaxed font-normal">Students need to move from C programming to reliable firmware under timing constraints, memory constraints, interrupts, peripheral integration, debugging, and hardware interaction.</p>
+      </div>
+    </div>
+
+    <!-- 5 Core Hands-on Activities -->
+    <div class="mb-5">
+      <h4 class="text-[11px] font-bold uppercase tracking-wider text-slate-500 mb-2.5 flex items-center gap-1">
+        <span class="material-symbols-outlined text-[15px] text-blue-600">task_alt</span> Core Hands-on Activities (5 Units)
+      </h4>
+      <div class="space-y-3">
+        
+    <div class="activity-item flex items-start gap-3.5 bg-white p-3.5 rounded-xl border border-slate-200 shadow-2xs">
+      <span class="w-7 h-7 rounded-lg bg-gradient-to-br from-blue-600 to-indigo-600 text-white text-sm font-bold flex items-center justify-center shrink-0 mt-0.5 shadow-2xs">1</span>
+      <div>
+        <h5 class="text-base font-bold text-slate-900">Interrupt-Driven System Challenge</h5>
+        <p class="text-sm text-slate-600 mt-0.5 leading-relaxed">Develop low-latency bare-metal interrupt service routines (ISRs) for high-frequency timer and external pin events without blocking loops.</p>
+      </div>
+    </div>
+  
+
+    <div class="activity-item flex items-start gap-3.5 bg-white p-3.5 rounded-xl border border-slate-200 shadow-2xs">
+      <span class="w-7 h-7 rounded-lg bg-gradient-to-br from-blue-600 to-indigo-600 text-white text-sm font-bold flex items-center justify-center shrink-0 mt-0.5 shadow-2xs">2</span>
+      <div>
+        <h5 class="text-base font-bold text-slate-900">Resource-Constrained Firmware Challenge</h5>
+        <p class="text-sm text-slate-600 mt-0.5 leading-relaxed">Optimize RAM and Flash memory footprint using static memory allocation, bitmasking, and compiler optimization flags (-Os).</p>
+      </div>
+    </div>
+  
+
+    <div class="activity-item flex items-start gap-3.5 bg-white p-3.5 rounded-xl border border-slate-200 shadow-2xs">
+      <span class="w-7 h-7 rounded-lg bg-gradient-to-br from-blue-600 to-indigo-600 text-white text-sm font-bold flex items-center justify-center shrink-0 mt-0.5 shadow-2xs">3</span>
+      <div>
+        <h5 class="text-base font-bold text-slate-900">Fault-Injection and Debug Challenge</h5>
+        <p class="text-sm text-slate-600 mt-0.5 leading-relaxed">Diagnose and recover from hard faults, stack overflows, buffer overflows, and pointer corruption using GDB / OpenOCD debugging.</p>
+      </div>
+    </div>
+  
+
+    <div class="activity-item flex items-start gap-3.5 bg-white p-3.5 rounded-xl border border-slate-200 shadow-2xs">
+      <span class="w-7 h-7 rounded-lg bg-gradient-to-br from-blue-600 to-indigo-600 text-white text-sm font-bold flex items-center justify-center shrink-0 mt-0.5 shadow-2xs">4</span>
+      <div>
+        <h5 class="text-base font-bold text-slate-900">Peripheral-Integration Challenge</h5>
+        <p class="text-sm text-slate-600 mt-0.5 leading-relaxed">Write robust drivers for I2C, SPI, and UART sensors with DMA support, timeout recovery, and packet checksum validation.</p>
+      </div>
+    </div>
+  
+
+    <div class="activity-item flex items-start gap-3.5 bg-white p-3.5 rounded-xl border border-slate-200 shadow-2xs">
+      <span class="w-7 h-7 rounded-lg bg-gradient-to-br from-blue-600 to-indigo-600 text-white text-sm font-bold flex items-center justify-center shrink-0 mt-0.5 shadow-2xs">5</span>
+      <div>
+        <h5 class="text-base font-bold text-slate-900">Time-Bound Embedded System Challenge</h5>
+        <p class="text-sm text-slate-600 mt-0.5 leading-relaxed">Build a deterministic multitasking scheduler with FreeRTOS meeting strict hard-deadline sensor sampling in under 3 hours.</p>
+      </div>
+    </div>
+  
+      </div>
+    </div>
+
+    <!-- Platform & Pre-Contest Challenge -->
+    <div class="mt-auto pt-4 border-t border-slate-200/80 space-y-3">
+      <div class="p-3.5 bg-white rounded-xl border border-slate-200 flex items-start gap-3">
+        <span class="material-symbols-outlined text-xl text-blue-600 mt-0.5">laptop_mac</span>
+        <div>
+          <span class="text-[10px] uppercase font-bold tracking-wider text-slate-400 block">Recommended Platform / Tool</span>
+          <span class="text-base font-bold text-slate-900">STM32 / ESP32, GCC, VS Code & Git</span>
+          <p class="text-sm text-slate-600 mt-0.5 leading-relaxed">Bare-metal C firmware development, register-level debugging, FreeRTOS kernel integration, logic analyzer inspection, and Git version control.</p>
+        </div>
+      </div>
+
+      <div class="p-3.5 bg-gradient-to-r from-blue-50 to-indigo-50/50 border-blue-200/80 text-blue-700 rounded-xl border flex items-center gap-3">
+        <span class="w-8 h-8 rounded-lg bg-blue-600 text-white flex items-center justify-center shrink-0 shadow-2xs">
+          <span class="material-symbols-outlined text-base">military_tech</span>
+        </span>
+        <div>
+          <span class="text-[10px] uppercase font-bold tracking-wider block">Pre-Contest / Department Challenge</span>
+          <span class="text-base font-bold text-slate-900">🏆 ECE Embedded Challenge</span>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  
+        
+  <!-- PATH 4 (LINEAR ALGEBRA) -->
+  <section class="flex flex-col innovation-card rounded-2xl p-6 sm:p-7 shadow-xs">
+    
+    <!-- Header Banner -->
+    <div class="rounded-xl overflow-hidden mb-6 border border-amber-200/70 shadow-xs">
+      <div class="h-40 w-full overflow-hidden relative bg-slate-950">
+        <img src="path2_hardware.png" class="w-full h-full object-cover opacity-90 hover:scale-105 transition-transform duration-500" alt="PATH 4 (LINEAR ALGEBRA)">
+        <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent"></div>
+        <div class="absolute top-3 right-3 px-2.5 py-1 rounded-full bg-white/90 backdrop-blur-md text-[11px] font-bold text-amber-600 shadow-xs flex items-center gap-1">
+          <span class="material-symbols-outlined text-[14px]">calculate</span> Track 2B
+        </div>
+      </div>
+      <div class="bg-gradient-to-r from-amber-600 via-orange-700 to-amber-800 py-3.5 px-5 text-white flex items-center justify-between">
+        <div>
+          <span class="text-[10px] uppercase font-bold tracking-widest text-amber-200">Track 02B • Mathematical Foundations & Modelling</span>
+          <h2 class="font-heading font-extrabold text-lg text-white tracking-wide">PATH 4 (LINEAR ALGEBRA)</h2>
+        </div>
+        <span class="material-symbols-outlined text-2xl text-amber-200">calculate</span>
+      </div>
+    </div>
+
+    <!-- Target Contest Card -->
+    <div class="bg-white rounded-xl border border-slate-200 p-4 mb-5 shadow-2xs">
+      <div class="flex items-start justify-between gap-2 mb-1.5">
+        <span class="text-[11px] font-bold uppercase tracking-wider text-amber-600 flex items-center gap-1">
+          <span class="material-symbols-outlined text-[15px]">emoji_events</span> Target Contest / Goal
+        </span>
+        <span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-yellow-50 text-yellow-800 border border-yellow-300 text-[10px] font-extrabold uppercase tracking-wider"><span class="w-1.5 h-1.5 rounded-full bg-yellow-500"></span> 🟡 Foundation / GATE Support</span>
+      </div>
+      <h3 class="font-heading font-bold text-lg text-slate-900 mb-2">GATE ECE • AI/ML Foundation • DSP Foundation • Engineering Modelling</h3>
+      <div class="flex flex-wrap gap-2">
+        
+    <a href="https://gate2026.iitk.ac.in" target="_blank" class="inline-flex items-center gap-1.5 text-xs font-semibold text-amber-600 hover:underline bg-slate-50 px-2.5 py-1 rounded-md border border-slate-200 transition-colors w-max group">
+      <span class="material-symbols-outlined text-[14px]">link</span> GATE Syllabus 
+      <span class="material-symbols-outlined text-[14px] group-hover:translate-x-0.5 transition-transform">open_in_new</span>
+    </a>
+  
+
+    <a href="https://numpy.org" target="_blank" class="inline-flex items-center gap-1.5 text-xs font-semibold text-amber-600 hover:underline bg-slate-50 px-2.5 py-1 rounded-md border border-slate-200 transition-colors w-max group">
+      <span class="material-symbols-outlined text-[14px]">link</span> NumPy Linear Algebra 
+      <span class="material-symbols-outlined text-[14px] group-hover:translate-x-0.5 transition-transform">open_in_new</span>
+    </a>
+  
+      </div>
+    </div>
+
+    <!-- Subject Mapped & Skill Gap -->
+    <div class="space-y-3.5 mb-5">
+      <div class="p-4 bg-slate-50/90 rounded-xl border border-slate-200/80">
+        <div class="flex items-center justify-between mb-1.5">
+          <h4 class="text-[11px] font-bold uppercase tracking-wider text-slate-500 flex items-center gap-1">
+            <span class="material-symbols-outlined text-[15px] text-amber-600">book</span> Subject Mapped
+          </h4>
+          <div class="flex items-center gap-1.5">
+            
+            <span class="text-[11px] font-semibold px-2 py-0.5 rounded bg-white text-slate-600 border border-slate-200">2611MASJ401</span>
+          </div>
+        </div>
+        <p class="font-heading font-extrabold text-lg sm:text-xl text-slate-900">Linear Algebra</p>
+      </div>
+
+      <div class="p-4 bg-amber-50/70 rounded-xl border-l-4 border-amber-500 border-t border-r border-b border-amber-200/70">
+        <h4 class="text-[11px] font-bold uppercase tracking-wider text-amber-900 mb-1 flex items-center gap-1">
+          <span class="material-symbols-outlined text-[15px] text-amber-600">psychology_alt</span> Skill Gap Identified
+        </h4>
+        <p class="text-base text-slate-800 leading-relaxed font-normal">Students need to apply matrix concepts (vector spaces, eigenvalues, SVD, projections) to solve real engineering and data problems.</p>
+      </div>
+    </div>
+
+    <!-- 5 Core Hands-on Activities -->
+    <div class="mb-5">
+      <h4 class="text-[11px] font-bold uppercase tracking-wider text-slate-500 mb-2.5 flex items-center gap-1">
+        <span class="material-symbols-outlined text-[15px] text-amber-600">task_alt</span> Core Hands-on Activities (5 Units)
+      </h4>
+      <div class="space-y-3">
+        
+    <div class="activity-item flex items-start gap-3.5 bg-white p-3.5 rounded-xl border border-slate-200 shadow-2xs">
+      <span class="w-7 h-7 rounded-lg bg-gradient-to-br from-amber-600 to-orange-600 text-white text-sm font-bold flex items-center justify-center shrink-0 mt-0.5 shadow-2xs">1</span>
+      <div>
+        <h5 class="text-base font-bold text-slate-900">Matrix-Based ECE Modelling Challenge</h5>
+        <p class="text-sm text-slate-600 mt-0.5 leading-relaxed">Formulate state-space circuit networks and multi-input multi-output communication channels as linear matrix equations.</p>
+      </div>
+    </div>
+  
+
+    <div class="activity-item flex items-start gap-3.5 bg-white p-3.5 rounded-xl border border-slate-200 shadow-2xs">
+      <span class="w-7 h-7 rounded-lg bg-gradient-to-br from-amber-600 to-orange-600 text-white text-sm font-bold flex items-center justify-center shrink-0 mt-0.5 shadow-2xs">2</span>
+      <div>
+        <h5 class="text-base font-bold text-slate-900">Eigenvalue Application Challenge</h5>
+        <p class="text-sm text-slate-600 mt-0.5 leading-relaxed">Compute modal frequencies and dominant modes of interconnected physical systems using eigenvalue/eigenvector decompositions.</p>
+      </div>
+    </div>
+  
+
+    <div class="activity-item flex items-start gap-3.5 bg-white p-3.5 rounded-xl border border-slate-200 shadow-2xs">
+      <span class="w-7 h-7 rounded-lg bg-gradient-to-br from-amber-600 to-orange-600 text-white text-sm font-bold flex items-center justify-center shrink-0 mt-0.5 shadow-2xs">3</span>
+      <div>
+        <h5 class="text-base font-bold text-slate-900">PCA-Style Dimensionality Reduction Challenge</h5>
+        <p class="text-sm text-slate-600 mt-0.5 leading-relaxed">Implement Principal Component Analysis from scratch using SVD and covariance matrices to compress multidimensional sensor signals.</p>
+      </div>
+    </div>
+  
+
+    <div class="activity-item flex items-start gap-3.5 bg-white p-3.5 rounded-xl border border-slate-200 shadow-2xs">
+      <span class="w-7 h-7 rounded-lg bg-gradient-to-br from-amber-600 to-orange-600 text-white text-sm font-bold flex items-center justify-center shrink-0 mt-0.5 shadow-2xs">4</span>
+      <div>
+        <h5 class="text-base font-bold text-slate-900">Matrix Computation Optimization Challenge</h5>
+        <p class="text-sm text-slate-600 mt-0.5 leading-relaxed">Optimize matrix multiplication and inversion routines for sparse and Toeplitz matrices using vectorized Python NumPy algorithms.</p>
+      </div>
+    </div>
+  
+
+    <div class="activity-item flex items-start gap-3.5 bg-white p-3.5 rounded-xl border border-slate-200 shadow-2xs">
+      <span class="w-7 h-7 rounded-lg bg-gradient-to-br from-amber-600 to-orange-600 text-white text-sm font-bold flex items-center justify-center shrink-0 mt-0.5 shadow-2xs">5</span>
+      <div>
+        <h5 class="text-base font-bold text-slate-900">Timed GATE/Application Challenge</h5>
+        <p class="text-sm text-slate-600 mt-0.5 leading-relaxed">Solve timed competitive problem sets on matrix rank, vector spaces, orthogonal projections, and quadratic forms under GATE exam conditions.</p>
+      </div>
+    </div>
+  
+      </div>
+    </div>
+
+    <!-- Platform & Pre-Contest Challenge -->
+    <div class="mt-auto pt-4 border-t border-slate-200/80 space-y-3">
+      <div class="p-3.5 bg-white rounded-xl border border-slate-200 flex items-start gap-3">
+        <span class="material-symbols-outlined text-xl text-amber-600 mt-0.5">functions</span>
+        <div>
+          <span class="text-[10px] uppercase font-bold tracking-wider text-slate-400 block">Recommended Platform / Tool</span>
+          <span class="text-base font-bold text-slate-900">Python, NumPy & MATLAB</span>
+          <p class="text-sm text-slate-600 mt-0.5 leading-relaxed">Numerical linear algebra, matrix decomposition, geometric transformation visualization, and algorithm optimization.</p>
+        </div>
+      </div>
+
+      <div class="p-3.5 bg-gradient-to-r from-amber-50 to-orange-50/50 border-amber-200/80 text-amber-800 rounded-xl border flex items-center gap-3">
+        <span class="w-8 h-8 rounded-lg bg-amber-600 text-white flex items-center justify-center shrink-0 shadow-2xs">
+          <span class="material-symbols-outlined text-base">military_tech</span>
+        </span>
+        <div>
+          <span class="text-[10px] uppercase font-bold tracking-wider block">Pre-Contest / Department Challenge</span>
+          <span class="text-base font-bold text-slate-900">🏆 Linear Algebra GATE Sprint</span>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  
+      </div>
+    </div>
+
+  
     <!-- Bottom Navigation Footer Bar -->
     <nav class="mt-12 p-4 bg-white/90 backdrop-blur-md rounded-2xl border border-slate-200 flex items-center justify-between shadow-sm">
       <div>
-        <a href="semester-3.html" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-white border border-slate-200 text-xs font-semibold text-slate-700 hover:border-blue-300 hover:text-blue-600 hover:bg-blue-50 transition-all shadow-2xs">
+        <a href="semester-3.html" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-slate-100 text-xs font-semibold text-slate-700 hover:bg-blue-50 hover:text-blue-600 transition-all">
         <span class="material-symbols-outlined text-[16px]">arrow_back</span> Sem III
        </a>
       </div>
+      <div class="flex items-center gap-2">
+        <a href="index.html" class="inline-flex items-center gap-1 text-xs font-semibold text-slate-500 hover:text-blue-600 transition-colors">
+          <span class="material-symbols-outlined text-[16px]">home</span> Roadmap Overview
+        </a>
+      </div>
       <div>
-        <a href="semester-5.html" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-blue-600 border border-blue-600 text-xs font-semibold text-white hover:bg-blue-700 transition-all shadow-sm">
+        <a href="semester-5.html" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-blue-600 text-xs font-semibold text-white hover:bg-blue-700 transition-all shadow-xs">
         Sem V <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
        </a>
       </div>
@@ -539,3 +834,5 @@
   </footer>
 </body>
 </html>
+
+  
