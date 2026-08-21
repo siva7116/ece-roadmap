@@ -85,6 +85,9 @@ Object.entries(map).forEach(([folder, filename]) => {
     content = content.replace(/<button[^>]*>\s*<span[^>]*>account_circle<\/span>\s*<\/button>/gi, '');
 
     fs.writeFileSync(path.join(outputDir, filename), content);
+    const rootOutputDir = path.join(__dirname, 'site');
+    if (!fs.existsSync(rootOutputDir)) fs.mkdirSync(rootOutputDir, { recursive: true });
+    fs.writeFileSync(path.join(rootOutputDir, filename), content);
     console.log(`Processed ${filename}`);
   } else {
     console.log(`Missing ${filePath}`);
